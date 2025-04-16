@@ -22,20 +22,15 @@ body {
 
 
 header {
-    display:flex;
-    flex-direction: row;
-    background-color: black;
-    color: white;
-    justify-content: space-evenly;
-    align-items: center;
-    
-
-    font-size: 30px;
-    font-family: eurostile;
-    margin-right: 10px;
-    height: 100px;
-    max-width: 100%;
-  
+        position: relative;
+        height: 100px;
+        width: 100%;
+        background-color: black;   
+        font-size: 30px;
+        font-family: eurostile;
+        margin-right: 10px;
+        height: 100px;
+        max-width: 100%;
 }
 
 
@@ -92,10 +87,11 @@ button {
 }
 
 .information {
-    width: 700px;
+    width: 800px;
     height: 350px;
     background-color: black;
     align-content: center;
+
 }
 
 #conteneur {
@@ -139,7 +135,21 @@ transform: translateY(30px);
 }
 
 .date {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
     font-size: 20px;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-family: eurostile;
+}
+
+.login {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 @media (max-width: 768px) {
