@@ -1,5 +1,5 @@
 @font-face {
-    font-family:eurostile ;
+    font-family:eurostile-regular;
     src: url(Asset/Font/eurostile-regular.ttf);
 }
 
@@ -154,9 +154,10 @@ transform: translateY(30px);
 
 @media (max-width: 768px) 
     @font-face {
-        font-family:eurostile ;
-        src: url(Asset/Font/eurostile-regular.ttf);
-    }
+        font-family: eurostile-regular;
+    src: url(Asset/Font/eurostile-regular.ttf);
+}
+
     
     @font-face {
         font-family: Banger;

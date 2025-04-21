@@ -32,12 +32,27 @@ body {
     margin: 0;
 
 }
-
-.date {
-    color: white;
-    margin-left: 20px;
-    text-decoration: none;
-    text-align: center;
+nav {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+}
+nav ul {
+    list-style: none;
+    padding:0;
+}
+nav li {
+    display: inline;
+    margin-right: 100px;
+}
+nav a {
+    color:white;
+    text-decoration:none
+}
+nav a:hover{
+    text-decoration:underline;
 }
 
 .button {
@@ -52,6 +67,7 @@ body {
     cursor: pointer;
     font-size: 16px;
     border-radius: 5px;
+    font-family: eurostile;
 }
 .popup {
     display: none;
@@ -66,6 +82,7 @@ body {
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
     z-index: 10;
 }
+
 .popup-overlay {
     display: none;
     position: fixed;
@@ -108,4 +125,11 @@ h2 {
     left: 1225px;
     bottom: 180px;
     z-index: 50;
+}
+
+.login {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
 }
