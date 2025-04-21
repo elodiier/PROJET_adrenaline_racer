@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ateliers</title>
+    <link rel="stylesheet" href="page2.css">
+	<script defer src="app.js"></script>
+
+</head>
+
+<header>
+
+	<div class="date">
+	<p>4 au 6 Avril 2025</p>
+	</div>
+</header>
+
+<body>
+	<div><h2>Ateliers</h2></div>
+
+
+	<div class="content">
+		<div>
+			<button class="button" onclick="openPopup ('atelier')">Atelier mécanique</button>
+			<button class="button" onclick="openPopup ('paddock')">Paddock intéractif</button>
+			<button class="button" onclick="openPopup ('quizz')">Quizz</button>
+			<button class="button" onclick="openPopup ('démonstration')">Démonstration de voitures</button>
+		</div>
+	</div>
+
+	<div class="popup-overlay" id="overlay" onclick="closePopup()"></div>
+	<div class="popup" id="atelierPopup">
+	<h2>Atelier Mécanique</h2>
+	<p>Informations sur l'atelier mécanique...</p>
+	<button onclick="closePopup()">Fermer</button>
+	</div>
+
+	<div class="popup" id="paddockPopup">
+	<h2>Paddock Interactif</h2>
+	<p>Informations sur le paddock interactif...</p>
+	<button onclick="closePopup()">Fermer</button>
+	</div>
+
+	<div class="popup" id="quizzPopup">
+	<h2>Quizz</h2>
+	<p>Informations sur le quizz...</p>
+	<button onclick="closePopup()">Fermer</button>
+	</div>
+
+	<div class="popup" id="démonstrationPopup">
+	<h2>Démonstration de Voitures</h2>
+	<p>Informations sur les démonstrations de voitures...</p>
+	<button onclick="closePopup()">Fermer</button>
+	</div>
+
+	<div class="pilotebleu"><img src="Asset/PiloteBleu.png">
+	</div>
+
+	<footer>
+			<div> Mentions légales</div>
+    </footer>
+</body>
+</html>
+
+	<script>
+		function openPopup(type) {
+			document.getElementById('overlay').style.display = 'block';
+			document.getElementById(type + 'Popup').style.display = 'block';
+		}
+		function closePopup() {
+			document.getElementById('overlay').style.display = 'none';
+			const popups = document.querySelectorAll('.popup');
+			popups.forEach(popup => popup.style.display = 'none');
+		}
+ 	</script>
+
+
