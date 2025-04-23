@@ -152,13 +152,11 @@ transform: translateY(30px);
     transform: translateY(-50%);
 }
 
-@media (max-width: 768px) 
+@media (max-width: 768px) {}
     @font-face {
         font-family: eurostile-regular;
     src: url(Asset/Font/eurostile-regular.ttf);
-}
-
-    
+    }
     @font-face {
         font-family: Banger;
         src: url(Asset/Font/Bangers-Regular.ttf);

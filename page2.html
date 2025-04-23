@@ -5,70 +5,69 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ateliers</title>
     <link rel="stylesheet" href="page2.css">
-	<script defer src="app.js"></script>
 
 </head>
-<nav class="navbar">
-	<ul>
-		<li><a href="#ateliers">Ateliers</a></li>
-		<li><a href="#billetterie">Billetterie</a></li>
-		<li><a href="#contact">Contact</a></li>
-		<li><a href="#login">Login</a></li>
-	</ul>
-</nav>
+	<header class="navbar">
+	<div class="logosite">
+	<img src="Asset/logosite/logosite.png" alt="adrenaline racer" class="logo">
+	</div>
+	<nav>
+		<a href="#" class="nav-link">Ateliers</a>
+		<a href="#" class="nav-link">Billetterie</a>
+		<a href="#" class="nav-link">Contact</a>
+	</nav>
+	<button class="home-button">Home</button>
+	</header>
+
 <body>
+	<main>
+		<h1>Ateliers</h1>
+<button class="button" onclick="openPopup('mechanic')">Atelier Mécanique</button>
+<button class="button" onclick="openPopup('paddock')">Paddock Interactif</button>
+<button class="button" onclick="openPopup('quiz')">Quizz</button>
+<button class="button" onclick="openPopup('demo')">Démonstration de Voitures</button>
+<!-- Pop-ups -->
+<div id="mechanic" class="popup-container">
+<div class="popup-title">Atelier Mécanique</div>
+<div class="popup-description">Séance de pitstop, simulateur de course, réparation de F1.</div>
+<button class="close-button" onclick="closePopup('mechanic')">Fermer</button>
+</div>
+
+<div id="paddock" class="popup-container">
+<div class="popup-title">Paddock Interactif</div>
+<div class="popup-description">Viens échanger avec ton pilote préféré.</div>
+<button class="close-button" onclick="closePopup('paddock')">Fermer</button>
+</div>
+
+<div id="quiz" class="popup-container">
+<div class="popup-title">Quizz</div>
+<div class="popup-description">Testez vos connaissances sur l'automobile!</div>
+<button class="close-button" onclick="closePopup('quiz')">Fermer</button>
+</div>
+
+<div id="demo" class="popup-container">
+<div class="popup-title">Démonstration de Voitures</div>
+<div class="popup-description">Assistez à des démonstrations en direct !</div>
+<button class="close-button" onclick="closePopup('demo')">Fermer</button>
+</div>
 	
-	<div class="container">
-		<div><h1>Ateliers</h1></div>
-		<div class="popup">
-			<button class="button" onclick="openPopup ('atelier')">Atelier mécanique</button>
-			<button class="button" onclick="openPopup ('paddock')">Paddock intéractif</button>
-			<button class="button" onclick="openPopup ('quizz')">Quizz</button>
-			<button class="button" onclick="openPopup ('démonstration')">Démonstration de voitures</button>
-		</div>
-	</div>
 
-	<div class="popup-overlay" id="overlay" onclick="closePopup()"></div>
-	<div class="popup" id="atelierPopup">
-		<h2>Atelier Mécanique</h2>
-		<p>Séance de pitstop, simulateur de course, réparation de f1</p>
-		<button onclick="closePopup()">Fermer</button>
-	</div>
+<script>
+       function openPopup(id) {
+           document.getElementById(id).style.display = 'block';
+       }
+       function closePopup(id) {
+           document.getElementById(id).style.display = 'none';
+       }
 
-	<div class="popup" id="paddockPopup">
-		<h2>Paddock Interactif</h2>
-		<p>Viens échanger avec ton pilote préféré</p>
-		<button onclick="closePopup()">Fermer</button>
+</script>
+<div class="pilotebleu"><img src="Asset/Icones/PiloteBleu.png">
+</div>
+<footer>
+	<div class="footer-content">
+		<p>Mentions légales</p>
 	</div>
-
-	<div class="popup" id="quizzPopup">
-		<h2>Quizz</h2>
-		<p>Viens tester tes connaissances dans le sport auto !</p>
-		<button onclick="closePopup()">Fermer</button>
-	</div>
-
-	<div class="popup" id="démonstrationPopup">
-		<h2>Démonstration de Voitures</h2>
-		<p>Viens admirer tes voitures préférées au plus près !</p>
-		<button onclick="closePopup()">Fermer</button>
-	</div>
-
-	<footer>
-			<div> Mentions légales</div>
-    </footer>
+	
+	<main>
 </body>
 </html>
-
-	<script>
-		function openPopup(type) {
-			document.getElementById('overlay').style.display = 'block';
-			document.getElementById(type + 'Popup').style.display = 'block';
-		}
-		function closePopup() {
-			document.getElementById('overlay').style.display = 'none';
-			const popups = document.querySelectorAll('.popup');
-			popups.forEach(popup => popup.style.display = 'none');
-		}
- 	</script>
-
-
