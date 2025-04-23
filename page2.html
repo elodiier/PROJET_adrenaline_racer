@@ -8,25 +8,19 @@
 	<script defer src="app.js"></script>
 
 </head>
-
-<header>
-	<div class="login"><button>Login</button></div>
-
-	<nav>
-		<ul>
-			<li><a href="#ateliers">Ateliers</a></li>
-			<li><a href="#billetterie">Billetterie</a></li>
-			<li><a href="#contact">Contact</a></li>
-		</ul>
-	</nav>
-</header>
-
+<nav class="navbar">
+	<ul>
+		<li><a href="#ateliers">Ateliers</a></li>
+		<li><a href="#billetterie">Billetterie</a></li>
+		<li><a href="#contact">Contact</a></li>
+		<li><a href="#login">Login</a></li>
+	</ul>
+</nav>
 <body>
-	<div><h2>Ateliers</h2></div>
-
-
-	<div class="content">
-		<div>
+	
+	<div class="container">
+		<div><h1>Ateliers</h1></div>
+		<div class="popup">
 			<button class="button" onclick="openPopup ('atelier')">Atelier mécanique</button>
 			<button class="button" onclick="openPopup ('paddock')">Paddock intéractif</button>
 			<button class="button" onclick="openPopup ('quizz')">Quizz</button>
@@ -36,30 +30,27 @@
 
 	<div class="popup-overlay" id="overlay" onclick="closePopup()"></div>
 	<div class="popup" id="atelierPopup">
-	<h2>Atelier Mécanique</h2>
-	<p>Séance de pitstop, simulateur de course, réparation de f1</p>
-	<button onclick="closePopup()">Fermer</button>
+		<h2>Atelier Mécanique</h2>
+		<p>Séance de pitstop, simulateur de course, réparation de f1</p>
+		<button onclick="closePopup()">Fermer</button>
 	</div>
 
 	<div class="popup" id="paddockPopup">
-	<h2>Paddock Interactif</h2>
-	<p>Viens échanger avec ton pilote préféré</p>
-	<button onclick="closePopup()">Fermer</button>
+		<h2>Paddock Interactif</h2>
+		<p>Viens échanger avec ton pilote préféré</p>
+		<button onclick="closePopup()">Fermer</button>
 	</div>
 
 	<div class="popup" id="quizzPopup">
-	<h2>Quizz</h2>
-	<p>Viens tester tes connaissances dans le sport auto !</p>
-	<button onclick="closePopup()">Fermer</button>
+		<h2>Quizz</h2>
+		<p>Viens tester tes connaissances dans le sport auto !</p>
+		<button onclick="closePopup()">Fermer</button>
 	</div>
 
 	<div class="popup" id="démonstrationPopup">
-	<h2>Démonstration de Voitures</h2>
-	<p>Viens admirer tes voitures préférées au plus près !</p>
-	<button onclick="closePopup()">Fermer</button>
-	</div>
-
-	<div class="pilotebleu"><img src="Asset/PiloteBleu.png">
+		<h2>Démonstration de Voitures</h2>
+		<p>Viens admirer tes voitures préférées au plus près !</p>
+		<button onclick="closePopup()">Fermer</button>
 	</div>
 
 	<footer>

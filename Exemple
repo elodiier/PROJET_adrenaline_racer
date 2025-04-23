@@ -1,13 +1,3 @@
-@font-face {
-    font-family:eurostile ;
-    src: url(Asset/Font/eurostile-regular.ttf);
-}
-
-@font-face {
-    font-family: Banger;
-    src: url(Asset/Font/Bangers-Regular.ttf);
-
-}
 
 body {
     background: linear-gradient(to bottom, #000 0%, #3974E9 82.69%);   
