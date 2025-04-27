@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style1.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>Adrénaline racer</title>
+</head>
+<body>
+    <header>
+      <nav>
+        <ul class="nav-bar">
+            <div class="logo"><a href="#"><img src="Asset/logosite/logosite.png" alt="logo"></a></div>
+            <input type="checkbox" id="check">
+            <span class="menu">
+                <li><a href="page1.html">Accueil</a></li>
+                <li><a href="page2.html">Ateliers</a></li>
+                <li><a href="Billetterie.html">Billetterie</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+                <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
+            </span>
+            <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
+        </ul>
+      </nav>
+  
+    </header>
+
+<div><h1>Ateliers</h1></div>
+
+<div class="buttoncontainer"></div>
+<button class="button" onclick="openPopup('atelierMecanique')">Atelier Mécanique</button>
+<button class="button" onclick="openPopup('paddock')">Paddock intéractif</button>
+<button class="button" onclick="openPopup('quizz')">Quizz</button>
+<button class="button" onclick="openPopup('demo')">Démonstrastion de voitures</button>
+</div>
+
+<div class="overlay" id="overlay" onclick="closePopup()"></div>
+<div class="popup" id="atelierMecanique">
+<span class="close" onclick="closePopup()">&times;</span>
+<h3>Atelier Mécanique</h3>
+<img src="Asset/Icones/Image_Popup.jpg" alt="Atelier Mécanique">
+<ul>
+<li>Séance de pit-stop</li>
+<li>Simulateur de course</li>
+<li>Réparation d'une F1</li>
+</ul>
+</div>
+
+<div class="popup" id="paddock" style="display:none;">
+<span class="close" onclick="closePopup()">&times;</span>
+<h3>Paddock intéractif</h3>
+<img src="Asset/Icones/mollette.png" alt="paddock">
+<ul>
+<li>Séance de diagnostic</li>
+<li>Réglage de la suspension</li>
+<li>Analyse des performances</li>
+</ul>
+</div>
+
+<div class="popup" id="quizz" style="display:none;">
+    <span class="close" onclick="closePopup()">&times;</span>
+    <h3>Quizz</h3>
+    <img src="Asset/Icones/quizz.png" alt="quizz">
+    <ul>
+    <li>Testez vos connaissances sur l'automobile.</li>
+    </ul>
+    </div>
+
+<div class="popup" id="demo" style="display:none;">
+    <span class="close" onclick="closePopup()">&times;</span>
+    <h3>Démonstration de voitures</h3>
+    <img src="Asset/Icones/quizz.png" alt="demo">
+    <ul>
+    <li>Assistez à des démonstrations en direct</li>
+
+    </ul>
+</div>
+
+<footer>
+    <div class="legal">Mentions légales</div>
+</footer>
+   
+
+
+<script>
+    function openPopup(popupId) {
+        document.getElementById(popupId).style.display = 'block';
+        document.getElementById('overlay').style.display = 'block';
+    }
+    function closePopup() {
+        const popups = document.querySelectorAll('.popup');
+        popups.forEach(popup => {
+            popup.style.display = 'none';
+        });
+        document.getElementById('overlay').style.display = 'none';
+    }
+
+
+</script>
+</body>
+</html>
