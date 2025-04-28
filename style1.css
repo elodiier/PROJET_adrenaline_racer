@@ -135,6 +135,50 @@ body {
     color: #fff;
     text-align: center;
 }
+
+.popup ul {
+    list-style: none;
+    padding: 0;
+}
+
+.popup li {
+    margin-top: 10px;
+    text-align: center;
+    margin-left: 10px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #3974E9;
+    font-weight: bold;
+}
+
+p { 
+    text-align: center;
+}
+
+.btn-inscription {
+    background-color: #fff;
+    color: #000;
+    border: none;
+    border-radius: 5px;
+    padding: 15px 30px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: inline-block;
+    margin-top: 20px;
+    width: auto;
+    font-family: eurostile;
+}
+
+.btn-inscription:hover {
+    background-color: #3974E9;
+}
+
+h3 {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
  
 .overlay {
     display: none;
@@ -156,6 +200,8 @@ body {
 img {
     width: 100%;
     border-radius: 8px;
+    max-height: 200px;
+    object-fit: cover;
 }
 h1 {
     font-size: 100px;
@@ -218,5 +264,10 @@ footer {
     }
     .legal {
         margin-bottom: 0;
+    }
+
+    .btn-inscription{
+        width: 100%;
+        font-size: 18px;
     }
 }
