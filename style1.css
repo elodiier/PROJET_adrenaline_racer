@@ -130,16 +130,60 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: white;
+    background-color: #000;
     padding: 20px;
-    border: 2px solid #2c3e50;
+    border: 2px solid #3974E9;
     z-index: 1000;
     width: 90%;
     max-width: 500px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    border-radius: 8px;
-    color: #000;
+    border-radius: 20px;
+    color: #fff;
     text-align: center;
+}
+
+.popup ul {
+    list-style: none;
+    padding: 0;
+}
+
+.popup li {
+    margin-top: 10px;
+    text-align: center;
+    margin-left: 10px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #3974E9;
+    font-weight: bold;
+}
+
+p { 
+    text-align: center;
+}
+
+.btn-inscription {
+    background-color: #fff;
+    color: #000;
+    border: none;
+    border-radius: 5px;
+    padding: 15px 30px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: inline-block;
+    margin-top: 20px;
+    width: auto;
+    font-family: eurostile;
+}
+
+.btn-inscription:hover {
+    background-color: #3974E9;
+}
+
+h3 {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 10px;
 }
  
 .overlay {
@@ -162,6 +206,8 @@ body {
 img {
     width: 100%;
     border-radius: 8px;
+    max-height: 200px;
+    object-fit: cover;
 }
 h1 {
     font-size: 100px;
@@ -222,5 +268,10 @@ footer {
     }
     .legal {
         margin-bottom: 0;
+    }
+
+    .btn-inscription{
+        width: 100%;
+        font-size: 18px;
     }
 }
