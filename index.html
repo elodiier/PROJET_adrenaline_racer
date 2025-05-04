@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://fonts.cdnfonts.com/css/eurostile" rel="stylesheet">              
+  <link rel="stylesheet" href="essai2.css">
+  <title>Document</title>
+</head>
+<body>
+  <header>
+      <div class="navbar">
+          <div class="logo">
+          <a href="#">Adrenaline Racer</a>
+          </div>
+        <ul class="links">
+          <li><a href="home">Accueil</a></li>
+          <li><a href="workshops">Ateliers</a></li>
+          <li><a href="tickets">Billetterie</a></li>
+          <li><a href="contact">Contact</a></li>
+        </ul>
+        <div class="buttons">
+          <a href="#" class="action-button connexion">Connexion</a>
+          <a href="#" class="action-button">Inscription</a>
+        </div>
+        <div class="burger-menu-button">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </div>
+      <div class="burger-menu">
+        <ul class="links">
+          <li><a href="home">Accueil</a></li>
+          <li><a href="workshops">Ateliers</a></li>
+          <li><a href="tickets">Billetterie</a></li>
+          <li><a href="contact">Contact</a></li>
+          <div class="divider"></div>
+              <div class="buttons-burger-menu">
+                <a href="#" class="action-button connexion">Connexion</a>
+                <a href="#" class="action-button">Inscription</a>
+              </div>
+        </ul>
+      </div>
+  </header>
+
+  <div><h1>Ateliers</h1></div>
+
+  <div class="buttoncontainer"></div>
+    <button class="button" onclick="openPopup('atelierMecanique')">Atelier Mécanique</button>
+    <button class="button" onclick="openPopup('paddock')">Paddock intéractif</button>
+    <button class="button" onclick="openPopup('quizz')">Quizz</button>
+    <button class="button" onclick="openPopup('demo')">Démonstrastion de voitures</button>
+  </div>
+
+  <div class="overlay" id="overlay" onclick="closePopup()"></div>
+    <div class="popup" id="atelierMecanique">
+<span class="close" onclick="closePopup()">&times;</span>
+<h3>Atelier Mécanique</h3>
+<img src="Asset/Icones/Image_Popup.jpg" alt="Atelier Mécanique">
+<ul>
+<li>Séance de pit-stop</li>
+<p>Participez à une expérience immersive.</p>
+<li>Réparation d'une F1</li>
+<p>Apprenez les rouages de la mécanique F1</p>
+</ul>
+<button class="btn-inscription">Inscrivez-vous</button>
+      </div>
+
+<div class="popup" id="paddock" style="display:none;">
+  <span class="close" onclick="closePopup()">&times;</span>
+  <h3>Paddock intéractif</h3>
+  <img src="Asset/Icones/image.jpg" alt="paddock">
+  <ul>
+    <li>Simulateur de course</li>
+      <p>Testez vos compétences de pilote</p>
+    <li>Echangez avec les pilotes</li>
+  </ul>
+    <button class="btn-inscription">Inscrivez-vous</button>
+</div>
+
+<div class="popup" id="quizz" style="display:none;">
+    <span class="close" onclick="closePopup()">&times;</span>
+    <h3>Quizz</h3>
+    <img src="Asset/Icones/istockphoto-1616906708-612x612.jpg" alt="quizz">
+    <ul>
+    <li>Testez vos connaissances sur l'automobile.</li>
+    </ul>
+    <button class="btn-inscription">Inscrivez-vous</button>
+</div>
+
+<div class="popup" id="demo" style="display:none;">
+    <span class="close" onclick="closePopup()">&times;</span>
+    <h3>Démonstration de voitures</h3>
+    <img src="Asset/Icones/1500_edito_09DTWWmoc_yze2oM6FZkkXOrnVUjvIrzUhOq5Tpmo_8=.webp" alt="demo">
+    <ul>
+    <li>Assistez à des démonstrations en direct</li>
+    </ul>
+    <button class="btn-inscription">Inscrivez-vous</button>
+</div>
+
+<footer>
+    <div class="legal">Mentions légales</div>
+</footer>
+   
+
+<script>
+    function openPopup(popupId) {
+        document.getElementById(popupId).style.display = 'block';
+        document.getElementById('overlay').style.display = 'block';
+    }
+    function closePopup() {
+        const popups = document.querySelectorAll('.popup');
+        popups.forEach(popup => {
+            popup.style.display = 'none';
+        });
+        document.getElementById('overlay').style.display = 'none';
+    }
+
+    const burgerMenuButton = document.querySelector('.burger-menu-button')
+    const burgerMenuButtonIcon = document.querySelector('.burger-menu-button i')
+    const burgerMenu = document.querySelector('.burger-menu')
+
+    burgerMenuButton.onclick =function(){
+      burgerMenu.classList.toggle('open')
+        const isOpen = burgerMenu.classList.contains('open')
+        burgerMenuButtonIcon.classList = isOpen ? 'fa-solid fa-xmark' : 'fa-solid fa-bars'
+    }
+  </script>
+</body>
+</html>

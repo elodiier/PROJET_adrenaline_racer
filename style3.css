@@ -107,7 +107,7 @@
     background-color: rgba(0, 0, 0, 0.7);
     padding: 20px;
     border-radius: 10px;
-    max-width: 600px; /* Limite la largeur du conteneur */
+    max-width: 800px; /* Limite la largeur du conteneur */
  }
  .pilot-image img {
     width: 100%; /* Prend toute la largeur de son conteneur */
@@ -117,12 +117,14 @@
     margin-top: 15px;
  }
  footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
     text-align: center;
-    padding: 10px;
+    padding: 30px;
  }
- .legal {
-    margin-top: 10px;
- }
+
  /* Styles pour petits écrans */
  @media (max-width: 600px) {
     h1 {
