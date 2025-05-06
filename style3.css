@@ -1,3 +1,9 @@
+@font-face { 
+   font-family: eurostile, banger;
+   src: url(./Asset/Font/eurostile-regular.ttf);
+   src: url(./Asset/Font/Bangers-Regular.ttf);
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -139,5 +145,13 @@
     .content {
         padding: 15px; /* Réduit le padding pour les petits écrans */
     }
- }
+    #footer {
+      flex-direction: row;
+      justify-content: space-between;
+  }
+  .legal {
+      margin-bottom: 0;
+  }
+}
+
  
