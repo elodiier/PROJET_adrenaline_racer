@@ -1,44 +1,76 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link href="https://fonts.cdnfonts.com/css/eurostile" rel="stylesheet">   
+<link rel="stylesheet" href="style3.css">       
 <title>Adrenaline Racer</title>
-<link rel="stylesheet" href="style3.css">
 </head>
 <body>
-<header>
-    <nav>
-      <ul class="nav-bar">
-          <div class="logo"><a href="#"><img src="Asset/logosite/logosite.png" alt="logo"></a></div>
-          <input type="checkbox" id="check">
-          <span class="menu">
-              <li><a href="./index.html">Accueil</a></li>
-              <li><a href="./ateliers.html">Ateliers</a></li>
-              <li><a href="Billetterie.html">Billetterie</a></li>
-              <li><a href="Contact.html">Contact</a></li>
-              <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
-          </span>
-          <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
-      </ul>
-    </nav>
-</header>
-
-<main>
-    <h1>ADRÉNALINE RACER</h1>
-    <div class="content">
-    <div class="information">
-    <p>A toi qui es passionné par les sports automobiles, cet événement est fait pour toi !</p>
-    <p>Tu as toujours rêvé d'affronter ton pilote préféré ? Découvrir les coulisses d'une course ?</p>
-    <p>Viens t'inscrire à nos nombreux ateliers !</p>
-    </div>
-    <div class="pilot-image">
-        <img src="Asset/Icones/PiloteBleu.png" alt="Pilote">
+  <header>
+      <div class="navbar">
+          <div class="logo">
+          <a href="#">Adrenaline Racer</a>
+          </div>
+        <ul class="links">
+          <li><a href="home">Accueil</a></li>
+          <li><a href="workshops">Ateliers</a></li>
+          <li><a href="tickets">Billetterie</a></li>
+          <li><a href="contact">Contact</a></li>
+        </ul>
+        <div class="buttons">
+          <a href="#" class="action-button connexion">Connexion</a>
+          <a href="#" class="action-button">Inscription</a>
         </div>
-    </main>
-    <footer>
-    <div class="legal">Mentions légales</div>
-    </footer>
-    </body>
-    </html>
+        <div class="burger-menu-button">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </div>
+      <div class="burger-menu">
+        <ul class="links">
+          <li><a href="home">Accueil</a></li>
+          <li><a href="workshops">Ateliers</a></li>
+          <li><a href="tickets">Billetterie</a></li>
+          <li><a href="contact">Contact</a></li>
+          <div class="divider"></div>
+              <div class="buttons-burger-menu">
+                <a href="#" class="action-button connexion">Connexion</a>
+                <a href="#" class="action-button">Inscription</a>
+              </div>
+        </ul>
+      </div>
+  </header>
+
+  <main>
+    
+    <h1>ADRÉNALINE RACER</h1>
+    <div class="animated-box in">
+    <div class="content">
+
+        <div class="information">
+    
+        <p>A toi qui es passionné par les sports automobiles, cet événement est fait pour toi !</p>
+    
+        <p>Tu as toujours rêvé d'affronter ton pilote préféré ? Découvrir les coulisses d'une course ?</p>
+    
+        <p>Viens t'inscrire à nos nombreux ateliers !</p>
+    
+        </div>
+    
+        <div class="pilot-image">
+    
+            <img src="Asset/Icones/PiloteBleu.png" alt="Pilote">
+    
+        </div>
+    </div>
+  </main>
+
+  <footer>
+  <div class="legal">Mentions légales</div>
+  </footer>
+  
 </body>
+</html>
