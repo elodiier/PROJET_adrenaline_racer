@@ -1,22 +1,26 @@
-const hamburgerToggler = document.querySelector (".hamburger")
-const navLinksContainer = document.querySelector (".navlinks-container");
+const btnPopup = document.querySelector('.btnLogin-popup');
+const cover_box = document.querySelector('.cover-box');
+const loginLink = document.querySelector('.login-link');
+const registerLink = document.querySelector('.register-link');
+const iconClose = document.querySelector('.icon-close');
 
-const toggleNav = () => {
-    hamburgerToggler.classList.toggle("open")
-    const ariaToggle = hamburgerToggler.getAttribute("aria-expended")
-    === "true" ? "false" : "true";
-    hamburgerToggler.setAttribute("aria-expended", ariaToggle)
-
-    navLinksContainer.classList.toggle("open")
+function activateCoverBox(){
+    cover_box.classList.add('active');
 }
 
-hamburgerToggler.addEventListener("click", toggleNav)
-
-new ResizeObserver(entries => {
-    if(entries[0].contentRect.width <=900){
-    navLinksContainer.style.transition = "transform 0.3s ease-out"
-    } else {
-    navLinksContainer.style.transition = "none"
+function deactivateCoverBox(){
+    cover_box.classList.remove('active');
 }
 
-}).observe(document.body)
+function activatePopup(){
+    cover_box.classList.add('active-popup');
+}
+
+function deactivateCoverPopup(){
+    cover_box.classList.remove('active-popup');
+}
+
+registerLink.addEventListener('click', activateCoverBox);
+loginLink.addEventListener('click', deactivateCoverBox);
+btnPopup.addEventListener('click', activatePopup);
+iconClose.addEventListener('click', deactivateCoverPopup);
