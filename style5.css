@@ -190,7 +190,7 @@ ul li a.active, ul li a:hover {
     transition: .5s;
 }
 
-.check_btn {
+.check-btn {
     font-size: 25px;
     color: #fff;
     float: left;
@@ -205,7 +205,7 @@ ul li a.active, ul li a:hover {
 }
 
 @media(max-width:858px) {
-    .check_btn{
+    .check-btn{
         display: block;
     }
 
@@ -250,7 +250,7 @@ ul li a.active, ul li a:hover {
     font-weight: bold;
 }
 
-.cover_box {
+.cover-box {
     position: relative;
     width: 400px;
     height: 400px;
@@ -262,12 +262,12 @@ ul li a.active, ul li a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    /*transform:scale(0);*/
+    transform:scale(0);
     overflow: hidden;
     transition: transform .5s ease, height .2s ease, border-color 0.5s ease;
 }
 
-.cover_box:hover {
+.cover-box:hover {
     border-color: #fff;
     animation: border-glow 1s infinite alternate;
 }
@@ -283,35 +283,36 @@ ul li a.active, ul li a:hover {
     }
 }
 
-.cover_box.active-popup {
+.cover-box.active-popup {
     transform: scale(1);
 }
 
-.cover_box.active {
+.cover-box.active {
+    transform: scale(1);
     height: 520px;
 }
-.cover_box .form-box {
+.cover-box .form-box {
     width: 100%;
     padding: 40px;
 }
-.cover_box .form-box.login {
+.cover-box .form-box.login {
     transition: transform .50s ease;
     transform: translateX(0);
 }
-.cover_box.active .form-box.login {
+.cover-box.active .form-box.login {
     transition: none;
     transform: translateX(-400px);
 }
-.cover_box .form-box.register {
+.cover-box .form-box.register {
     position: absolute;
     transition: none;
     transform: translateX(400px);
 }
-.cover_box.active .form-box.register{
+.cover-box:hover.active .form-box.register{
     transition: transform .5s ease;
     transform: translateX();
 }
-.cover_box .icon-close {
+.cover-box .icon-close {
     position: absolute;
     top: 5px;
     right: 5px;
