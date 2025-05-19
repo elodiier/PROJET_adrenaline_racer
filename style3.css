@@ -13,7 +13,7 @@
 }
 
 body {
-  height: 70vh;
+  height: 88vh;
   background: linear-gradient(to bottom, black, #3974E9);
   background-repeat: no-repeat;
   display: flex;
@@ -163,15 +163,17 @@ header {
     text-align: center;
  }
  h1 {
-    font-size: 5rem;
-    margin-bottom: 40px;
+    font-size: 3rem;
+    margin-bottom: 0;
     font-family: eurostile;
     color: #fff;
+
  }
  .content {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     background-color: rgba(0, 0, 0, 0.7);
     padding: 20px;
     border-radius: 10px;
@@ -230,6 +232,7 @@ footer {
   padding: 30px;
   text-align: center;
   border-radius: 4px;
+  margin-top: 50px;
 }
 
 .animated-box h1 {
@@ -294,6 +297,8 @@ footer {
     -webkit-clip-path: polygon(0% 100%, 3px 100%, 3px 100%, 3px 100%, 3px 100%, 3px 100%, 3px 100%, 3px 100%, 3px 100%, 0% 100%);
   }
 }
+
+
 
 /* -----Responsive----- */
 
