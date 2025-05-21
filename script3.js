@@ -4,15 +4,26 @@ const loginLink = document.querySelector('.login-link');
 const registerLink = document.querySelector('.register-link');
 const iconClose = document.querySelector('.icon-close');
 
-function openPopup(){
+function activateCoverBox(){
     coverBox.classList.add('active');
 }
 
-function closePopup() {
+function deactivateCoverBox() {
     coverBox.classList.remove('active');
+    coverBox.classList.remove('active-popup');
 }
 
-if (registerLink) registerLink.addEventListener('click', openPopup);
-if (loginLink) loginLink.addEventListener('click', closePopup);
-if (btnPopup) btnPopup.addEventListener('click', openPopup);
-if (iconClose) iconClose.addEventListener('click', closePopup);
+function activatePopup(){
+    coverBox.classList.add('active-popup');
+}
+
+function deactivateCoverPopup(){
+    coverBox.classList.remove('active-popup');
+}
+
+btnPopup.addEventListener('click', activateCoverBox);
+loginLink.addEventListener('click', deactivateCoverBox);
+registerLink.addEventListener('click', activatePopup);
+iconClose.addEventListener('click', deactivateCoverBox);
+
+

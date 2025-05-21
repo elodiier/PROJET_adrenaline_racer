@@ -299,18 +299,18 @@ ul li a.active, ul li a:hover {
     transition: transform .50s ease;
     transform: translateX(0);
 }
-.cover-box.active .form-box.login {
+.cover-box.active.active-popup .form-box.login {
     transition: none;
     transform: translateX(-400px);
 }
-.cover-box .form-box.register {
+.cover-box.active .form-box.register {
     position: absolute;
     transition: none;
     transform: translateX(400px);
 }
-.cover-box:hover.active .form-box.register{
+.cover-box.active.active-popup .form-box.register{
     transition: transform .5s ease;
-    transform: translateX();
+    transform: translateX(0);
 }
 .cover-box .icon-close {
     position: absolute;
@@ -327,6 +327,7 @@ ul li a.active, ul li a:hover {
     border-radius: 50%;
     z-index: 1;
 }
+
 
 .form-box h2 {
     font-size: 2em;
