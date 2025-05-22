@@ -143,7 +143,7 @@
 }
 
 .container .contactInfo .sci li a:hover {
-    color: #3974E9;
+    color: #fff;
     filter: drop-shadow(0 0 5px #3974E9);
 }
 
@@ -251,6 +251,8 @@
     font-size: 1.1em;
     font-weight: 500;
 }
+
+
 
 /* responsive */
 
