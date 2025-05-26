@@ -27,62 +27,25 @@
         </div>
     </header>
 
-    <div class="cover-box">
-        <button class="icon-close"></button>
-        <div class="form-box login">
-            <h2>Login</h2>
-            <form action="#">
-                <div class="input-box">
-                    <span class="icon"><ion-icon name="mail-outline"></ion-icon></span>
-                    <input type="email" required>
-                    <label>Email</label>
-                </div>
-                 <div class="input-box">
-                    <span class="icon"><ion-icon name="lock-closed-outline"></ion-icon></span>
-                    <input type="password" required>
-                    <label>Password</label>
-                </div>
-                <div class="remember-forgot">
-                    <label><input type="checkbox">Remember me</label>
-                    <a href="#">Forgot password?</a>
-                </div>
-                <button type="submit" class="btn">Login</button>
-                <div class="login-register">
-                    <p>Don't have an account? <a href="#" class="register-link">Register</a></p>
-                </div>
-            </form>
-        </div>
-        <!--Registration-->
+    <main>
+    <!--QR CODE-->
 
-        <div class="form-box register">
-            <h2>Register</h2>
-            <form action="#">
-                <div class="input-box">
-                    <span class="icon"><ion-icon name="person-outline"></ion-icon></span>
-                    <input type="text" required>
-                    <label>Username</label>
-                </div>
-                <div class="input-box">
-                    <span class="icon"><ion-icon name="mail-outline"></ion-icon></span>
-                    <input type="email" required>
-                    <label>Email</label>
-                </div>
-                 <div class="input-box">
-                    <span class="icon"><ion-icon name="lock-closed-outline"></ion-icon></span>
-                    <input type="password" required>
-                    <label>Password</label>
-                </div>
-                <div class="remember-forgot">
-                    <label><input type="checkbox">Agree to terms & conditions</label>
-                    <a href="#">Forgot password?</a>
-                </div>
-                <button type="submit" class="btn">Register</button>
-                <div class="login-register">
-                    <p>Already have an account? <a href="#" class="login-link">Register</a></p>
-                </div>
-            </form>
-        </div>
-    </div>
+        <div class="container">
+            <div class="title">
+                <h1>QR Code Generator</h1>
+                <p>Paste an URL or enter text to create QR Code</p>
+            </div>
+            <div class="form">
+                <input type="text" spellcheck="false" placeholder="Enter text or URL">
+                <button>Generate QR Code</button>
+            </div>
+            <div class="qr-code">
+                <img src="" alt="qr-code">
+            </div>
+        </div>  
+    </main>
+
+    <!--Footer-->
         <div class="footer">
             <footer>
                 <div class="footer-content">
@@ -103,5 +66,6 @@
  <script src="./BilletterieScript.js"></script>
 <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
 </body>
 </html>
