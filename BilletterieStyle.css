@@ -349,44 +349,6 @@ ul li a.active, ul li a:hover {
     text-decoration: underline;
 }
 
-/*footer */
-
-.footer {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    color: #fff;
-    padding: 10px 0;
-    text-align: center;
-    background: #3974E9;
-    backdrop-filter: blur(10px);
-}
-
-.footer-content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding: 0 10px;
-}
-
-.social-icon a {
-    color: #fff;
-    font-size: 1.5em;
-    margin: 0 10px;
-    text-decoration: none;
-    transition: color 0.3s ease-in-out;
-}
-
-.footer-content p {
-    font-size: 0.9em;
-    margin-bottom: 10px;
-}
-
-.social-icon a:hover {
-    color: #fff;
-}
-
 /* QR Code */
 
 .container {
@@ -468,6 +430,44 @@ ul li a.active, ul li a:hover {
 
 .qr-code img {
     width: 170px;
+}
+
+/*footer */
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    background: #3974E9;
+    backdrop-filter: blur(10px);
+}
+
+.footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 10px;
+}
+
+.social-icon a {
+    color: #fff;
+    font-size: 1.5em;
+    margin: 0 10px;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+.footer-content p {
+    font-size: 0.9em;
+    margin-bottom: 10px;
+}
+
+.social-icon a:hover {
+    color: #fff;
 }
 
 @media(max-width: 858px) {
