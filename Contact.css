@@ -399,6 +399,7 @@ ul li a.active, ul li a:hover {
 
 .contact {
     position: relative;
+    margin-top: 50px;
     min-height: 100vh;
     padding: 50px 100px;
     display: flex;

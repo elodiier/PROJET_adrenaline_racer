@@ -54,9 +54,9 @@ header {
  }
  h1 {
     font-size: 3rem;
-    margin-bottom: 0;
     font-family: eurostile;
     color: #fff;
+    margin-top: 200px;
  }
  .content {
     display: flex;
@@ -228,10 +228,8 @@ ul li a.active, ul li a:hover {
     font-weight: bold;
 }
 
-.cover-box {
-    position: relative;
-    width: 400px;
-    height: 400px;
+/* .cover-box {
+  display: none;
     background: transparent;
     border: 2px solid #c9c8c8;
     border-radius: 20px;
@@ -241,14 +239,13 @@ ul li a.active, ul li a:hover {
     justify-content: center;
     align-items: center;
     transform:scale(0);
-    overflow: hidden;
-    transition: transform .5s ease, height .2s ease, border-color 0.5s ease;
+    overflow: auto;
 }
 
 .cover-box:hover {
     border-color: #fff;
     animation: border-glow 1s infinite alternate;
-}
+} */
 
 @keyframes border-glow {
     from{
@@ -562,6 +559,7 @@ ul li a.active, ul li a:hover {
   }
    h1 {
       font-size: 3rem; /* Réduit la taille du titre */
+
    }
 }
 

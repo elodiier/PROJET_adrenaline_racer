@@ -127,6 +127,7 @@ ul li a.active, ul li a:hover {
     padding: 0 10px;
     font-family: 'eurostile';
     font-weight: bold;
+    flex-direction: column;
 }
 
 /* -----Modale----- */
@@ -260,7 +261,6 @@ h1 {
 .logo {
   margin-right: 30px;
   margin-left: 20px;
-  display: flex;
   justify-content: space-around;
 
 }
