@@ -349,7 +349,7 @@ ul li a.active, ul li a:hover {
     color: #fff;
     padding: 10px 0;
     text-align: center;
-    background: #3974E9;
+    background: transparent;
     backdrop-filter: blur(10px);
 }
 
@@ -643,6 +643,8 @@ ul li a.active, ul li a:hover {
 }
 
 
+
+
 /* responsive */
 
 @media (max-width: 991px) {
@@ -667,6 +669,10 @@ ul li a.active, ul li a:hover {
     .container .contactForm form
     {
         padding: 10px;
+    }
+    .footer {
+        position: fixed;
+        margin-bottom: 0;
     }
     
 }

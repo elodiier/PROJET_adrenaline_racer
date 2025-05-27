@@ -216,6 +216,7 @@ ul li a.active, ul li a:hover {
     }
 }
 
+
 /*logo */
 
 .logo {
@@ -227,25 +228,6 @@ ul li a.active, ul li a:hover {
     font-family: 'eurostile';
     font-weight: bold;
 }
-
-/* .cover-box {
-  display: none;
-    background: transparent;
-    border: 2px solid #c9c8c8;
-    border-radius: 20px;
-    backdrop-filter: blur(20px);
-    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transform:scale(0);
-    overflow: auto;
-}
-
-.cover-box:hover {
-    border-color: #fff;
-    animation: border-glow 1s infinite alternate;
-} */
 
 @keyframes border-glow {
     from{
@@ -417,7 +399,7 @@ ul li a.active, ul li a:hover {
     color: #fff;
     padding: 10px 0;
     text-align: center;
-    background: #3974E9;
+    background: transparent;
     backdrop-filter: blur(10px);
 }
 

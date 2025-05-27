@@ -441,7 +441,7 @@ ul li a.active, ul li a:hover {
     color: #fff;
     padding: 10px 0;
     text-align: center;
-    background: #3974E9;
+    background: transparent;
     backdrop-filter: blur(10px);
 }
 
