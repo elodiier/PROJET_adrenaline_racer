@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programmation</title>
+    <link rel="stylesheet" href="./programmation.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://fonts.cdnfonts.com/css/eurostile" rel="stylesheet">
+   
+</head>
+<body>
+    <header>
+        <div class="navigation">
+            <input type="checkbox" id="check">
+            <label for="check" class="chek_btn">
+                <i class="fas fa-bars"></i>
+            </label>
+            <img src="./Asset/Icones/NouveauLogo.png" class="logo" alt="logo">
+            <ul>
+                <li><a href="#">Accueil</a></li>
+                <li><a href="#">Ateliers</a></li>
+                <li><a href="#">Billetterie</a></li>
+                <li><a href="#">Programmation</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><button class="btnLogin-popup">Login</button></li>
+            </ul>
+        </div>
+    </header>
+
+    <div class="cover_box">
+        <span class="icon-close"><ion-icon name="close-outline"></ion-icon></span>
+        <div class="form-box login">
+            <h2>Connexion</h2>
+            <form action="#">
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="mail-outline"></ion-icon></span>
+                    <input type="email" required>
+                    <label>Email</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="lock-closed-outline"></ion-icon></span>
+                    <input type="password" required>
+                    <label>Mot de passe</label>
+                </div>
+                <div class="remember-forgot">
+                    <label><input type="checkbox">Se souvenir de moi</label>
+                    <a href="#">Mot de passe oublié?</a>
+                </div>
+                <button type="submit" class="btn">Connexion</button>
+                <div class="login-register">
+                    <p>Pas de compte? <a href="#" class="register-link">S'enregistrer</a></p>
+                </div>
+            </form>
+        </div>
+
+<!--S'enregistrer-->
+
+        <div class="form-box register">
+            <h2>S'enregistrer</h2>
+            <form action="#">
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="person-outline"></ion-icon></span>
+                    <input type="text" required>
+                    <label>nom utlisateur</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon"></span>
+                    <input type="email" required>
+                    <label>Email</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="lock-closed-outline"></ion-icon></span>
+                    <input type="password" required>
+                    <label>Mot de passe</label>
+                </div>
+                <div class="remember-forgot">
+                    <label><input type="checkbox">Accepter les termes & conditions</label>
+                    <a href="#">Mot de passe oublié?</a>
+                </div>
+                <button type="submit" class="btn">S'enregistrer</button>
+                <div class="login-register">
+                    <p>Déjà un compte? <a href="#" class="login-link">S'enregistrer</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+
+<script src="programmation.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+        
+</body>
+</html>
