@@ -123,6 +123,190 @@ ul li a.active, ul li a:hover {
     line-height: 50px;
 }
 
+/* Cover box */
+
+.cover-box {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    background: #fff;
+    border: 2px solid #3974E9;
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform:scale(0);
+    overflow: hidden;
+    transition: transform .5s ease, height .2s ease, border-color 0.5s ease;
+}
+
+.cover-box:hover {
+    border-color: #3974E9;
+    animation: border-glow 1s infinite alternate;
+}
+
+@keyframes border-glow {
+    from{
+        border-color: #f6f8f6;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    }
+    to{
+        border-color: #3974E9;
+        box-shadow: 0 0 20px rgba(255, 255, 255, 1);
+    }
+}
+
+.cover-box.active-popup {
+    transform: scale(1);
+}
+
+.cover-box.active {
+    transform: scale(1);
+    height: 520px;
+}
+.cover-box .form-box {
+    width: 100%;
+    padding: 40px;
+}
+.cover-box .form-box.login {
+    transition: transform .50s ease;
+    transform: translateX(0);
+}
+.cover-box.active.active-popup .form-box.login {
+    transition: none;
+    transform: translateX(-400px);
+}
+.cover-box.active .form-box.register {
+    position: absolute;
+    transition: none;
+    transform: translateX(400px);
+}
+.cover-box.active.active-popup .form-box.register{
+    transition: transform .5s ease;
+    transform: translateX(0);
+}
+.cover-box .icon-close {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: 45px;
+    height: 45px;
+    background: #3974E9;
+    font-size: 2em;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+
+.form-box h2 {
+    font-size: 2em;
+    color: #000;
+    text-align: center;
+}
+
+.input-box {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
+}
+
+.input-box label {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    color: #3974E9;
+    font-weight: 500;
+    pointer-events: none;
+    transition: 5s;
+}
+
+.input-box input:focus~label,
+.input-box input:valid~label {
+    top: -10px;
+}
+
+.input-box input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: 1px solid #000;
+    border-radius: 10px;
+    outline: none;
+    font-size: 1em;
+    color: #3974E9;
+    font-weight: 600;
+    padding: 0 35px 0 5px;
+}
+
+.input-box .icon {
+    position: absolute;
+    right: 8px;
+    font-size: 1.2em;
+    color: #000;
+    line-height: 57px;
+}
+
+.remember-forgot {
+    font-size: .9em;
+    color: #000;
+    font-weight: 500;
+    margin: -15px 0 15px;
+    display: flex;
+    justify-content:space-between;
+}
+
+.remember-forgot label input {
+    accent-color: #000;
+    margin-right: 3px;
+}
+
+.remember-forgot a {
+    color: #000;
+    text-decoration: underline;
+}
+
+.remember-forgot a:hover {
+    text-decoration: underline;
+}
+
+.btn {
+    width: 100%;
+    height: 45px;
+    background-color: #000;
+    border: none;
+    outline: none;
+    border-radius: 100px;
+    cursor: pointer;
+    font-size: 1em;
+    color: #fff;
+    font-weight: 500;
+}
+
+.login-register {
+    font-size: .9em;
+    color: #000;
+    text-align: center;
+    font-weight: 500;
+    margin: 25px 0 10px;
+}
+
+.login-register p a {
+    color: #000;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.login-register p a:hover {
+    text-decoration: underline;
+}
 
 
 /* Responsive design */
@@ -160,64 +344,3 @@ ul li a.active, ul li a:hover {
     }
 }
 
-.cover_box {
-    position: relative;
-    width: 400px;
-    height: 440px;
-    background: #fff;
-    border: 2px solid #3974E9;
-    border-radius: 20px;
-    backdrop-filter: blur(20px);
-    box-sizing: 0 0 30px rgba(0, 0, 0, 0.5);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /*transform: scale(0);*/
-    overflow: hidden;
-    transition: transform .5s ease, height .2s ease, border-color 0.5s ease;
-}
-
-.cover_box:hover {
-    border-color: #fff;
-    animation: border-glow 1s infinite alternate;
-}
-
-@keyframes border-glow {
-    from {
-        border-color: #f6f8f6;
-        box-shadow: 0 0 20px #fff;
-    }
-    to {
-        border-color: #3974E9;
-        box-shadow: 0 0 20px #3974E9;
-    }
-
-}
-
-.cover_box.active-popup {
-    transform: scale(1);
-}
-
-.cover_box.active {
-    height: 520px;
-}
-.cover_box .form-box {
-    width: 100%;
-    padding: 40px;
-}
-
-.cover_box .form-box.login {
-    transition: transform .50s ease;
-    transform: translateX(0);
-}
-
-.cover_box.active .form-box.login {
-    transition: none;
-    transform: translateX(-400px);
-}
-
-.cover_box .form-box.register {
-    position: absolute;
-    transition: none;
-    transform: translateX(400px);
-}

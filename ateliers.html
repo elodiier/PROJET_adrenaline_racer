@@ -1,107 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link href="https://fonts.cdnfonts.com/css/eurostile" rel="stylesheet">              
-  <link rel="stylesheet" href="./ateliersStyle.css">
-  <title>Document</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ateliers</title>
+    <link href="https://fonts.cdnfonts.com/css/eurostile" rel="stylesheet">
+    <link rel="stylesheet" href="./ateliersStyle.css">
 </head>
-    <header>
-        <div class="navigation">
-            <input type="checkbox" id="check">
-            <label for="check" class="check-btn">
-                <i class="fas fa-bars"></i>
-            </label>
-            <label class="logo">Adrenaline Racer</label>
-            <ul>
-                <li><a href="index.html">Accueil</a></li>
-                <li><a href="ateliers.html">Ateliers</a></li>
-                <li><a href="billetterie.html">Billetterie</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="login.html">Login</a></li>
-            </ul>
-        </div>
-    </header>
 <body>
+<div id="Container">
+  <div id="nose-top"></div>
+  <div id="nose-bottom"></div>
+  <div id="nose"></div>
+  <div id="front-wing"></div>
+  <div id="top-front-wing-trim"></div>
+  <div id="bottom-front-wing-trim"></div>
+  <div id="top-front-wing-trim-2"></div>
+  <div id="bottom-front-wing-trim-2"></div>
+  <div id="top-front-wing"></div>
+  <div id="top-front-wing-tail"></div>
+  <div id="bottom-front-wing"></div>
+  <div id="bottom-front-wing-tail"></div>
+  <div id="bottom-front-wheel" class="wheel"></div>
+  <div id="bottom-back-wheel"></div>
+  <div id="top-front-wheel" class="wheel"></div>
+  <div id="top-back-wheel"></div>
+  <div id="rear-body"></div>
+  <div id="rear-wing-bg"></div>
+  <div id="rear-wing"></div>
+  <div id="top-body-curve"></div>
+  <div id="top-body-curve-cut"></div>
+  <div id="top-body-curve-straight"></div>
+  <div id="top-body-curve-straight-2"></div>
+  <div id="bottom-body-curve"></div>
+  <div id="bottom-body-curve-cut"></div>
+  <div id="bottom-body-curve-straight"></div>
+  <div id="bottom-body-curve-straight-2"></div>
+  <div id="back-body-curve"></div>
+  <div id="body-hood"></div>
+  <div id="back-body"></div>
+  <div id="back-body-top"></div>
+  <div id="back-body-bottom"></div>
+  <div id="back-body-2"></div>
+  <div id="top-spoke-1"></div>
+  <div id="top-spoke-2"></div>
+  <div id="top-spoke-3"></div>
+  <div id="top-spoke-4"></div>
+  <div id="bottom-spoke-1"></div>
+  <div id="bottom-spoke-2"></div>
+  <div id="bottom-spoke-3"></div>
+  <div id="bottom-spoke-4"></div>
 
-  <div><h1>Ateliers</h1></div>
+  <div id="back-spoke"></div>
 
-  <div class="buttoncontainer"></div>
-    <button class="button" onclick="openPopup('atelierMecanique')">Atelier Mécanique</button>
-    <button class="button" onclick="openPopup('paddock')">Paddock intéractif</button>
-    <button class="button" onclick="openPopup('quizz')">Quizz</button>
-    <button class="button" onclick="openPopup('demo')">Démonstrastion de voitures</button>
-  </div>
-
-  <div class="overlay" id="overlay" onclick="closePopup()"></div>
-    <div class="popup" id="atelierMecanique">
-    <span class="close" onclick="closePopup()">&times;</span>
-  <h3>Atelier Mécanique</h3>
-    <img src="Asset/Icones/Image_Popup.jpg" alt="Atelier Mécanique">
-  <ul>
-    <li>Séance de pit-stop</li>
-    <p>Participez à une expérience immersive.</p>
-    <li>Réparation d'une F1</li>
-    <p>Apprenez les rouages de la mécanique F1</p>
-  </ul>
-  <button class="btn-inscription">Inscrivez-vous</button>
-  </div>
-
-  <div class="popup" id="paddock" style="display:none;">
-    <span class="close" onclick="closePopup()">&times;</span>
-    <h3>Paddock intéractif</h3>
-    <img src="Asset/Icones/image.jpg" alt="paddock">
-    <ul>
-      <li>Simulateur de course</li>
-      <p>Testez vos compétences de pilote</p>
-      <li>Echangez avec les pilotes</li>
-    </ul>
-      <button class="btn-inscription">Inscrivez-vous</button>
-  </div>
-
-  <div class="popup" id="quizz" style="display:none;">
-    <span class="close" onclick="closePopup()">&times;</span>
-    <h3>Quizz</h3>
-    <img src="Asset/Icones/istockphoto-1616906708-612x612.jpg" alt="quizz">
-    <ul>
-    <li>Testez vos connaissances sur l'automobile.</li>
-    </ul>
-    <button class="btn-inscription">Inscrivez-vous</button>
-  </div>
-
-  <div class="popup" id="demo" style="display:none;">
-    <span class="close" onclick="closePopup()">&times;</span>
-    <h3>Démonstration de voitures</h3>
-    <img src="Asset/Icones/1500_edito_09DTWWmoc_yze2oM6FZkkXOrnVUjvIrzUhOq5Tpmo_8=.webp" alt="demo">
-    <ul>
-    <li>Assistez à des démonstrations en direct</li>
-    </ul>
-    <button class="btn-inscription">Inscrivez-vous</button>
-  </div>
-
-  <div class="footer">
-    <footer>
-      <div class="footer-content">
-        <div class="social-icons">
-          <p>&copy; 2025 Adrenaline racer. All rights reserved</p>
-          <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
-          <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
-          <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
-          <a href="#"><ion-icon name="logo-linkedin"></ion-icon></a>
-          <a href="./mentionslegales.html">Mentions légales</a>
-          <a href="./cgv.html">CGV</a>
-        </div>
-      </div>
-    </footer>
-  </div>
-   
-
-
-  <script src="./ateliersScript.js"></script>
-  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <div id="mirror-top"></div>
+  <div id="mirror-bottom"></div>
+  <div id="driver-bg"></div>
+  <div id="driver-wheel"></div>
+  <div id="driver-helmet"></div>
+  <div id="bottom-body-spine"></div>
+  <div id="top-body-spine"></div>
+  <div id="end-body-spine"></div>
+  <div id="top-body-spine-2"></div>
+  <div id="bottom-body-spine-2"></div>
+  </div> 
 </body>
 </html>
