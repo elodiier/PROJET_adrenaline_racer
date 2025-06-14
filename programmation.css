@@ -123,6 +123,74 @@ ul li a.active, ul li a:hover {
     line-height: 50px;
 }
 
+/* Contenu princial */
+main {
+     padding: 30px 20px;
+     max-width: 1200px;
+     margin: auto;
+   }
+section {
+     background-color: #000;
+     border: 1px solid #fff;
+     border-radius: 12px;
+     overflow: hidden;
+     margin-bottom: 30px;
+     display: flex;
+     flex-direction: column;
+     transition: transform 0.3s ease;
+   }
+h1 {
+    font-size: 1.5rem;
+    color: #58a6ff;
+    margin-bottom: 10px;
+    text-align: center;
+   }
+p{
+    font-size: 1.1rem;
+    color: #fff;
+    margin-bottom: 10px;
+    text-align: center;
+   }
+section:hover {
+    transform: scale(1.01);
+   }
+section img {
+    width: 100%;
+    height: auto;
+   }
+.content {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;   /* Centre verticalement */
+    align-items: center;       /* Centre horizontalement */
+    text-align: center;        /* Centre le texte */
+    height: 100%;              /* Prend toute la hauteur du parent */
+}
+
+.content h2 {
+    font-size: 1.5rem;
+    color: #58a6ff;
+    margin-bottom: 10px;
+}
+.content p {
+    font-size: 1rem;
+    color: #c9d1d9;
+}
+@media (min-width: 768px) {
+    section {
+    flex-direction: row;
+    }
+    section img {
+    width: 40%;
+    height: 100%;
+    object-fit: cover;
+    }
+    .content {
+       width: 60%;
+    }
+}
+
 /* Cover box */
 
 .cover-box {
@@ -342,5 +410,6 @@ ul li a.active, ul li a:hover {
     #check:checked ~ ul {
         left: 0;
     }
+
 }
 
