@@ -140,7 +140,7 @@ section {
      transition: transform 0.3s ease;
    }
 h1 {
-    font-size: 1.5rem;
+    font-size: rem;
     color: #58a6ff;
     margin-bottom: 10px;
     text-align: center;
@@ -166,6 +166,7 @@ section img {
     align-items: center;       /* Centre horizontalement */
     text-align: center;        /* Centre le texte */
     height: 100%;              /* Prend toute la hauteur du parent */
+   
 }
 
 .content h2 {
@@ -176,19 +177,26 @@ section img {
 .content p {
     font-size: 1rem;
     color: #c9d1d9;
+    
 }
 @media (min-width: 768px) {
     section {
-    flex-direction: row;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;   /* Centre verticalement */
+    align-items: center; 
+
     }
     section img {
     width: 40%;
     height: 100%;
     object-fit: cover;
+    margin-top: 20px;
     }
     .content {
        width: 60%;
     }
+    
 }
 
 /* Cover box */
