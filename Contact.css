@@ -115,18 +115,21 @@ ul li a.active, ul li a:hover {
         display: block;
     }
 
-    ul {
+   ul {
         position: fixed;
-        width: 50%;
-        height: 70vh;
-        background: #000;
-        top: 100px;
         left: -100%;
-        text-align: left;
-        transition: all .5s;
+        top: 100px;
+        flex-direction: column;
+        background: #000;
+        width: 60vw;         /* Limite la largeur à 80% de la fenêtre */
+        max-width: 350px;    /* Largeur maximale */
+        height: 80vh;
+        justify-content: flex-start;
+        align-items: center;
+        transition: left 0.3s;
+        z-index: 999;
+        padding-top: 40px;
         border: 2px solid #3974E9;
-        border-radius: 6px;
-        box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
     }
 
     header .navigation ul li {

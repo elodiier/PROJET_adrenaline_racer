@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Billetterie - Adrenaline Racer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://fonts.cdnfonts.com/css/eurostile" rel="stylesheet">
     <link rel="stylesheet" href="billetterieStyle.css">
-   <link rel="stylesheet" href="./login.css">
+    <link rel="stylesheet" href="./login.css">
 </head>
 <body>
     <header>
@@ -20,7 +20,7 @@
             <ul>
                 <li><a href="index.html">Accueil</a></li>
                 <li><a href="ateliers.html">Ateliers</a></li>
-                <li><a href="billetterie.html">Billetterie</a></li>
+                <li><a href="billetterie.html" class="active">Billetterie</a></li>
                 <li><a href="programmation.html">Programmation</a></li>
                 <li><a href="contact.html">Contact</a></li>
                 <li><button class="btnLogin-popup">Login</button></li>
@@ -29,105 +29,97 @@
     </header>
 
     <main>
-
-         <div class="cover-box">
-        <button class="icon-close"></button>
-        <div class="form-box login">
-            <h2>Login</h2>
-            <form action="#">
-                <div class="input-box">
-                    <span class="icon"><ion-icon name="mail-outline"></ion-icon></span>
-                    <input type="email" required>
-                    <label>Email</label>
-                </div>
-                 <div class="input-box">
-                    <span class="icon"><ion-icon name="lock-closed-outline"></ion-icon></span>
-                    <input type="password" required>
-                    <label>Password</label>
-                </div>
-                <div class="remember-forgot">
-                    <label><input type="checkbox">Remember me</label>
-                    <a href="#">Forgot password?</a>
-                </div>
-                <button type="submit" class="btn">Login</button>
-                <div class="login-register">
-                    <p>Don't have an account? <a href="#" class="register-link">Register</a></p>
-                </div>
-            </form>
-        </div>
-
-        <!--Registration-->
-
-        <div class="form-box register">
-            <h2>Register</h2>
-            <form action="#">
-                <div class="input-box">
-                    <span class="icon"><ion-icon name="person-outline"></ion-icon></span>
-                    <input type="text" required>
-                    <label>Username</label>
-                </div>
-                <div class="input-box">
-                    <span class="icon"><ion-icon name="mail-outline"></ion-icon></span>
-                    <input type="email" required>
-                    <label>Email</label>
-                </div>
-                 <div class="input-box">
-                    <span class="icon"><ion-icon name="lock-closed-outline"></ion-icon></span>
-                    <input type="password" required>
-                    <label>Password</label>
-                </div>
-                <div class="remember-forgot">
-                    <label><input type="checkbox">Agree to terms & conditions</label>
-                    <a href="#">Forgot password?</a>
-                </div>
-                <button type="submit" class="btn">Register</button>
-                <div class="login-register">
-                    <p>Already have an account? <a href="#" class="login-link">Register</a></p>
-                </div>
-            </form>
-        </div>
-    </div>
-    <!--QR CODE-->
-
-    <div class="ticket">
-        <h1>Adrénaline Racer</h1>
-        <p><strong>Date :</strong> 28 Juin 2025</p>
-        <p><strong>Lieu :</strong> 4 avenue de circuit Senna</p>
-        <p>67520,<br>STRASBOURG</p>
-        <p><strong>Nom :</strong> Elodie ROTTNER</p>
-        <p><strong>Billet #</strong> 102938</p>
-        <div class="qr-code">
-            <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&amp;data=JeanDupont_102938_Concert2025" alt="QR Code">
-        </div>
-        <div class="ticket-footer">
-            Veuillez présenter ce billet à l'entrée.<br>
-            Le QR code est unique.
-        </div>
-    </div>
-
-    <!--Footer-->
-        <div class="footer">
-            <footer>
-                <div class="footer-content">
-                    <p>&copy; 2025 Adrenaline racer. All rights reserved</p>
-                    <div class="social-icons">
-                        <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
-                        <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
-                        <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
-                        <a href="#"><ion-icon name="logo-linkedin"></ion-icon></a>
-                        <a href="./mentionslegales.html">Mentions légales</a>
-                        <a href="./cgv.html">CGV</a>
+        <div class="cover-box">
+            <button class="icon-close"></button>
+            <div class="form-box login">
+                <h2>Login</h2>
+                <form action="#">
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="mail-outline"></ion-icon></span>
+                        <input type="email" required>
+                        <label>Email</label>
                     </div>
-                </div>
-            </footer>
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="lock-closed-outline"></ion-icon></span>
+                        <input type="password" required>
+                        <label>Password</label>
+                    </div>
+                    <div class="remember-forgot">
+                        <label><input type="checkbox">Remember me</label>
+                        <a href="#">Forgot password?</a>
+                    </div>
+                    <button type="submit" class="btn">Login</button>
+                    <div class="login-register">
+                        <p>Don't have an account? <a href="#" class="register-link">Register</a></p>
+                    </div>
+                </form>
+            </div>
+            <!-- Registration -->
+            <div class="form-box register">
+                <h2>Register</h2>
+                <form action="#">
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="person-outline"></ion-icon></span>
+                        <input type="text" required>
+                        <label>Username</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="mail-outline"></ion-icon></span>
+                        <input type="email" required>
+                        <label>Email</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="lock-closed-outline"></ion-icon></span>
+                        <input type="password" required>
+                        <label>Password</label>
+                    </div>
+                    <div class="remember-forgot">
+                        <label><input type="checkbox">Agree to terms & conditions</label>
+                        <a href="#">Forgot password?</a>
+                    </div>
+                    <button type="submit" class="btn">Register</button>
+                    <div class="login-register">
+                        <p>Already have an account? <a href="#" class="login-link">Login</a></p>
+                    </div>
+                </form>
+            </div>
         </div>
 
+        <!-- QR CODE -->
+        <div class="ticket">
+            <h1>Adrénaline Racer</h1>
+            <p><strong>Date :</strong> 28 Juin 2025</p>
+            <p><strong>Lieu :</strong> 4 avenue de circuit Senna</p>
+            <p>67520,<br>STRASBOURG</p>
+            <p><strong>Nom :</strong> Elodie ROTTNER</p>
+            <p><strong>Billet #</strong> 102938</p>
+            <div class="qr-code">
+                <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&amp;data=JeanDupont_102938_Concert2025" alt="QR Code">
+            </div>
+            <div class="ticket-footer">
+                Veuillez présenter ce billet à l'entrée.<br>
+                Le QR code est unique.
+            </div>
+        </div>
+    </main>
+        <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2025 Adrenaline Racer. Tous droits réservés</p>
+            <div class="social-icons">
+                <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+                <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+                <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+                <a href="#"><ion-icon name="logo-linkedin"></ion-icon></a>
+                <a href="./mentionslegales.html">Mentions légales</a>
+                <a href="./cgv.html">CGV</a>
+            </div>
+        </div>
+    </footer>
 
 
 
- <script src="./billetterieScript.js"></script>
-<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-
+    <script src="./billetterieScript.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 </html>
