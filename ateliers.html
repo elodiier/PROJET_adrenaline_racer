@@ -28,120 +28,116 @@
     </header>
 
     <main>
-
-         <div class="cover-box">
-        <button class="icon-close"></button>
-        <div class="form-box login">
-            <h2>Login</h2>
-            <form action="#">
-                <div class="input-box">
-                    <span class="icon"><ion-icon name="mail-outline"></ion-icon></span>
-                    <input type="email" required>
-                    <label>Email</label>
-                </div>
-                 <div class="input-box">
-                    <span class="icon"><ion-icon name="lock-closed-outline"></ion-icon></span>
-                    <input type="password" required>
-                    <label>Password</label>
-                </div>
-                <div class="remember-forgot">
-                    <label><input type="checkbox">Remember me</label>
-                    <a href="#">Forgot password?</a>
-                </div>
-                <button type="submit" class="btn">Login</button>
-                <div class="login-register">
-                    <p>Don't have an account? <a href="#" class="register-link">Register</a></p>
-                </div>
-            </form>
+        <div class="cover-box">
+            <button class="icon-close"></button>
+            <div class="form-box login">
+                <h2>Login</h2>
+                <form action="#">
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="mail-outline"></ion-icon></span>
+                        <input type="email" required>
+                        <label>Email</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="lock-closed-outline"></ion-icon></span>
+                        <input type="password" required>
+                        <label>Password</label>
+                    </div>
+                    <div class="remember-forgot">
+                        <label><input type="checkbox">Remember me</label>
+                        <a href="#">Forgot password?</a>
+                    </div>
+                    <button type="submit" class="btn">Login</button>
+                    <div class="login-register">
+                        <p>Don't have an account? <a href="#" class="register-link">Register</a></p>
+                    </div>
+                </form>
+            </div>
+            <!-- Registration -->
+            <div class="form-box register">
+                <h2>Register</h2>
+                <form action="#">
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="person-outline"></ion-icon></span>
+                        <input type="text" required>
+                        <label>Username</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="mail-outline"></ion-icon></span>
+                        <input type="email" required>
+                        <label>Email</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="lock-closed-outline"></ion-icon></span>
+                        <input type="password" required>
+                        <label>Password</label>
+                    </div>
+                    <div class="remember-forgot">
+                        <label><input type="checkbox">Agree to terms & conditions</label>
+                        <a href="#">Forgot password?</a>
+                    </div>
+                    <button type="submit" class="btn">Register</button>
+                    <div class="login-register">
+                        <p>Already have an account? <a href="#" class="login-link">Login</a></p>
+                    </div>
+                </form>
+            </div>
         </div>
 
-        <!--Registration-->
-
-        <div class="form-box register">
-            <h2>Register</h2>
-            <form action="#">
-                <div class="input-box">
-                    <span class="icon"><ion-icon name="person-outline"></ion-icon></span>
-                    <input type="text" required>
-                    <label>Username</label>
-                </div>
-                <div class="input-box">
-                    <span class="icon"><ion-icon name="mail-outline"></ion-icon></span>
-                    <input type="email" required>
-                    <label>Email</label>
-                </div>
-                 <div class="input-box">
-                    <span class="icon"><ion-icon name="lock-closed-outline"></ion-icon></span>
-                    <input type="password" required>
-                    <label>Password</label>
-                </div>
-                <div class="remember-forgot">
-                    <label><input type="checkbox">Agree to terms & conditions</label>
-                    <a href="#">Forgot password?</a>
-                </div>
-                <button type="submit" class="btn">Register</button>
-                <div class="login-register">
-                    <p>Already have an account? <a href="#" class="login-link">Register</a></p>
-                </div>
-            </form>
-        </div>
-    </div>
-<body>
-
-    <h1>Expérience Interactive</h1>
-
+        <h1>Expérience Interactive</h1>
         <div class="container">
             <div class="card" onclick="openModal('modal1')">
                 <img src="./Asset/Icones/atelier_meca.png" alt="Atelier mécanique">
-                    <h3>Atelier Mécanique</h3>
+                <h3>Atelier Mécanique</h3>
             </div>
-                        <div class="card" onclick="openModal('modal2')">
-                            <img src="./Asset/Icones/simulateur.png" alt="Paddock interactif">
-                                <h3>Paddock Interactif</h3>
-                        </div>
-                                    <div class="card" onclick="openModal('modal3')">
-                                        <img src="./Asset/Icones/Quizz.png" alt="Quizz">
-                                            <h3>Quizz</h3>
-                                    </div>
-                                                <div class="card" onclick="openModal('modal4')">
-                                                    <img src="./Asset/Icones/demo_voiture.png" alt="Démonstration de voiture">
-                                                        <h3>Démonstration de Voiture</h3>
-                                                </div>
+            <div class="card" onclick="openModal('modal2')">
+                <img src="./Asset/Icones/simulateur.png" alt="Paddock interactif">
+                <h3>Paddock Interactif</h3>
+            </div>
+            <div class="card" onclick="openModal('modal3')">
+                <img src="./Asset/Icones/Quizz.png" alt="Quizz">
+                <h3>Quizz</h3>
+            </div>
+            <div class="card" onclick="openModal('modal4')">
+                <img src="./Asset/Icones/demo_voiture.png" alt="Démonstration de voiture">
+                <h3>Démonstration de Voiture</h3>
+            </div>
         </div>
-    <!-- Modales -->
-    <div id="modal1" class="modal">
-        <div class="modal-content">
-            <span class="close" onclick="closeModal('modal1')">&times;</span>
-            <img src="./Asset/Icones/atelier_meca.png" alt="Atelier mécanique">
-            <h2>Atelier Mécanique</h2>
-            <p>Découvrez les dessous d’un atelier mécanique en pleine action, apprenez comment les moteurs sont démontés et réparés !</p>
+        <!-- Modales -->
+        <div id="modal1" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('modal1')">&times;</span>
+                <img src="./Asset/Icones/atelier_meca.png" alt="Atelier mécanique">
+                <h2>Atelier Mécanique</h2>
+                <p>Découvrez les dessous d’un atelier mécanique en pleine action, apprenez comment les moteurs sont démontés et réparés !</p>
+            </div>
         </div>
-    </div>
-    <div id="modal2" class="modal">
-        <div class="modal-content">
-            <span class="close" onclick="closeModal('modal2')">&times;</span>
-            <img src="./Asset/Icones/simulateur.png" alt="Paddock interactif">
-            <h2>Paddock Interactif</h2>
-            <p>Interagissez avec les véhicules, configurez-les en temps réel et explorez les technologies embarquées dans un paddock numérique.</p>
+        <div id="modal2" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('modal2')">&times;</span>
+                <img src="./Asset/Icones/simulateur.png" alt="Paddock interactif">
+                <h2>Paddock Interactif</h2>
+                <p>Interagissez avec les véhicules, configurez-les en temps réel et explorez les technologies embarquées dans un paddock numérique.</p>
+            </div>
         </div>
-    </div>
-    <div id="modal3" class="modal">
-        <div class="modal-content">
-            <span class="close" onclick="closeModal('modal3')">&times;</span>
-            <img src="./Asset/Icones/Quizz.png" alt="Quizz">
-            <h2>Quizz</h2>
-            <p>Testez vos connaissances en mécanique, en technologie auto et en sécurité routière avec notre quizz interactif.</p>
+        <div id="modal3" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('modal3')">&times;</span>
+                <img src="./Asset/Icones/Quizz.png" alt="Quizz">
+                <h2>Quizz</h2>
+                <p>Testez vos connaissances en mécanique, en technologie auto et en sécurité routière avec notre quizz interactif.</p>
+            </div>
         </div>
-    </div>
-    <div id="modal4" class="modal">
-        <div class="modal-content">
-            <span class="close" onclick="closeModal('modal4')">&times;</span>
-            <img src="./Asset/Icones/demo_voiture.png" alt="Démonstration de voiture">
-            <h2>Démonstration de Voiture</h2>
-            <p>Assistez à une démonstration en direct des capacités de véhicules de haute performance sur piste.</p>
+        <div id="modal4" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('modal4')">&times;</span>
+                <img src="./Asset/Icones/demo_voiture.png" alt="Démonstration de voiture">
+                <h2>Démonstration de Voiture</h2>
+                <p>Assistez à une démonstration en direct des capacités de véhicules de haute performance sur piste.</p>
+            </div>
         </div>
-    </div>
-        <footer class="footer">
+    </main>
+    <footer class="footer">
         <div class="footer-content">
             <p>&copy; 2025 Adrenaline Racer. Tous droits réservés</p>
             <div class="social-icons">
@@ -154,11 +150,6 @@
             </div>
         </div>
     </footer>
-
-
-<script src="./ateliersScript.js"></script>
-<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-
-</body>
-</html>
+    <script src="./ateliersScript.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
