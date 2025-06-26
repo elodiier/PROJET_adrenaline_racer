@@ -490,7 +490,7 @@ p {
     
 }
 
-<<<<<<< HEAD
+
 /*footer */
 
 .footer {
@@ -504,15 +504,13 @@ p {
     backdrop-filter: blur(10px);
 }
 
-=======
->>>>>>> fdf890dbc8b8b0bd449bfafd0ad5e60c30d2093c
 .footer-content {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     padding: 0 10px;
-<<<<<<< HEAD
+
 }
 
 .social-icon a {
@@ -551,8 +549,6 @@ p {
 @keyframes zoomIn {
  0% { transform: scale(0.8); opacity: 0; }
  100% { transform: scale(1); opacity: 1; }
-=======
->>>>>>> fdf890dbc8b8b0bd449bfafd0ad5e60c30d2093c
 }
 
 .social-icon a {
