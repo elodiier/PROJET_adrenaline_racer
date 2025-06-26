@@ -125,8 +125,8 @@ ul li a.active, ul li a:hover {
 
     ul {
         position: fixed;
-        width: 50%;
-        height: 70vh;
+        width: 60%;
+        height: 80vh;
         background: #000;
         top: 100px;
         left: -100%;
@@ -134,7 +134,7 @@ ul li a.active, ul li a:hover {
         transition: all .5s;
         border: 2px solid #3974E9;
         border-radius: 6px;
-        box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+        box-shadow: 0 0 30px #3974E9;
     }
 
     header .navigation ul li {
@@ -383,10 +383,14 @@ ul li a.active, ul li a:hover {
    transform: scale(1);
  }
 }
+p {
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
    /*présentation*/
 #presentation {
  background: #000;
- padding: 60px 20px;
+ padding: 20px 20px;
  animation: fadeIn 1.5s ease-out;
  border: #3974E9 2px solid;
 }
@@ -444,6 +448,7 @@ ul li a.active, ul li a:hover {
   font-size: 2rem;
   margin-top: 20px;
   margin-bottom: 30px;
+  margin-top: 30px;
   color: #fff;
   text-transform: uppercase;
 }
@@ -469,18 +474,23 @@ ul li a.active, ul li a:hover {
   color: #3974E9;
   margin-bottom: 10px;
 }
-.animation-racer {
-  margin: 60px 0;
-  text-align: center;
-}
-.car {
-  width: 100px;
-  height: 50px;
-  background: url('https://i.imgur.com/t7HEa8z.png') no-repeat center/contain;
-  animation: drive 5s linear infinite;
-  margin: auto;
+
+/*footer */
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    background: transparent;
+    backdrop-filter: blur(10px);
+    margin-top: 20px;
+    
 }
 
+<<<<<<< HEAD
 /*footer */
 
 .footer {
@@ -494,12 +504,15 @@ ul li a.active, ul li a:hover {
     backdrop-filter: blur(10px);
 }
 
+=======
+>>>>>>> fdf890dbc8b8b0bd449bfafd0ad5e60c30d2093c
 .footer-content {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     padding: 0 10px;
+<<<<<<< HEAD
 }
 
 .social-icon a {
@@ -538,12 +551,44 @@ ul li a.active, ul li a:hover {
 @keyframes zoomIn {
  0% { transform: scale(0.8); opacity: 0; }
  100% { transform: scale(1); opacity: 1; }
+=======
+>>>>>>> fdf890dbc8b8b0bd449bfafd0ad5e60c30d2093c
 }
 
-@keyframes drive {
-  0% { transform: translateX(-150%); }
-  100% { transform: translateX(150%); }
+.social-icon a {
+    color: #fff;
+    font-size: 1.5em;
+    margin: 0 10px;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
 }
+
+.footer-content p {
+    font-size: 0.9em;
+    margin-bottom: 10px;
+}
+
+.social-icon a:hover {
+    color: #fff;
+}
+
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 999;
+}
+.close {
+  cursor: pointer;
+  color: #000;
+  float: right;
+  font-size: 24px;
+}
+
 
    /* Responsive */
 @media (max-width: 768px) {
@@ -560,6 +605,8 @@ ul li a.active, ul li a:hover {
   .presentation-content {
   flex-direction: column;
   text-align: center;
+  width: auto;
+  height: auto;
   }
   .presentation-content .text h2 {
    font-size: 2rem;
@@ -571,18 +618,20 @@ ul li a.active, ul li a:hover {
         display: block;
     }
 
-    ul {
+   ul {
         position: fixed;
-        width: 50%;
-        height: 70vh;
-        background: #000;
-        top: 100px;
         left: -100%;
-        text-align: left;
-        transition: all .5s;
-        border: 2px solid #3974E9;
-        border-radius: 6px;
-        box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+        top: 100px;
+        flex-direction: column;
+        background: #000;
+        width: 60vw;         /* Limite la largeur à 80% de la fenêtre */
+        max-width: 350px;    /* Largeur maximale */
+        height: 80vh;
+        justify-content: flex-start;
+        align-items: center;
+        transition: left 0.3s;
+        z-index: 999;
+        padding-top: 40px;
     }
 
     header .navigation ul li {
@@ -597,5 +646,8 @@ ul li a.active, ul li a:hover {
 
     #check:checked ~ ul {
         left: 0;
+    }
+    .animated-racer {
+        font-size: 1.2rem;
     }
 }

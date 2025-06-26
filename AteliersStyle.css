@@ -126,8 +126,8 @@ ul li a.active, ul li a:hover {
 
     ul {
         position: fixed;
-        width: 50%;
-        height: 70vh;
+        width: 60%;
+        height: 80vh;
         background: #000;
         top: 100px;
         left: -100%;
@@ -135,8 +135,9 @@ ul li a.active, ul li a:hover {
         transition: all .5s;
         border: 2px solid #3974E9;
         border-radius: 6px;
-        box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+        box-shadow: 0 0 30px #3974E9;
     }
+    
 
     header .navigation ul li {
         display: block;
@@ -413,6 +414,7 @@ h1 {
     animation: fadeIn 0.3s ease;
     border: 2px solid #3974E9;
     text-align: center;
+    
 }
 .modal-content img {
     width: 100%;
@@ -431,13 +433,8 @@ h1 {
     color: #333;
 }
 
-@keyframes fadeIn {
-     from {opacity: 0; transform: translateY(-10px);}
-     to {opacity: 1; transform: translateY(0);}
-}
 
-
- /*footer */
+/*footer */
 
 .footer {
     position: absolute;
@@ -485,6 +482,18 @@ h1 {
   background-color: rgba(0, 0, 0, 0.7);
   z-index: 999;
 }
+.close {
+  cursor: pointer;
+  color: #000;
+  float: right;
+  font-size: 24px;
+}
+@keyframes fadeIn {
+     from {opacity: 0; transform: translateY(-10px);}
+     to {opacity: 1; transform: translateY(0);}
+}
+
+
 
 @media (max-width: 600px) {
     header {
@@ -514,4 +523,39 @@ h1 {
         flex-direction: column;
     }
    }
-   
+@media(max-width:858px) {
+    .check-btn{
+        display: block;
+    }
+
+    ul {
+        position: fixed;
+        left: -100%;
+        top: 100px;
+        flex-direction: column;
+        background: #000;
+        width: 60vw;         /* Limite la largeur à 80% de la fenêtre */
+        max-width: 350px;    /* Largeur maximale */
+        height: 80vh;
+        justify-content: flex-start;
+        align-items: center;
+        transition: left 0.3s;
+        z-index: 999;
+        padding-top: 40px;
+    }
+
+    header .navigation ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+
+    header .navigation ul li a {
+        font-size: 20px;
+    }
+
+    #check:checked ~ ul {
+        left: 0;
+    }
+
+}

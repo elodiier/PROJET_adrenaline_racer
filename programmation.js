@@ -1,5 +1,3 @@
-/* Script bouton Login/inscription */
-
 const btnPopup = document.querySelector('.btnLogin-popup');
 /* bouton pour ouvrir la popup*/
 const coverBox = document.querySelector('.cover-box');
@@ -31,8 +29,6 @@ function deactivateCoverPopup(){
     coverBox.classList.remove('active-popup');
 }
 /* Cache la fenêtre popup, mais laisse le fond actif */
-
-
 
 btnPopup.addEventListener('click', activateCoverBox);
 /*Quand on clique sur le bouton de la popup on active l'arrière plan (coverBox) via activateCoverBox ce qui ajoute la classe active */

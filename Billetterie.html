@@ -1,14 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link href="https://fonts.cdnfonts.com/css/eurostile" rel="stylesheet">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link rel="stylesheet" href="billetterieStyle.css">
-   <link rel="stylesheet" href="./login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.cdnfonts.com/css/eurostile" rel="stylesheet">
+    <!-- Ionicons pour les icônes réseaux -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <title>F1 Racing Experience - Billet</title>
 </head>
+
 <body>
     <header>
         <div class="navigation">
@@ -18,7 +21,7 @@
             </label>
             <label class="logo">Adrenaline Racer</label>
             <ul>
-                <li><a href="index.html">Accueil</a></li>
+                <li><a href="login.html">Accueil</a></li>
                 <li><a href="ateliers.html">Ateliers</a></li>
                 <li><a href="billetterie.html">Billetterie</a></li>
                 <li><a href="programmation.html">Programmation</a></li>
@@ -28,9 +31,9 @@
         </div>
     </header>
 
-    <main>
+    <!--Login-->
 
-         <div class="cover-box">
+    <div class="cover-box">
         <button class="icon-close"></button>
         <div class="form-box login">
             <h2>Login</h2>
@@ -87,47 +90,59 @@
             </form>
         </div>
     </div>
-    <!--QR CODE-->
-
-    <div class="ticket">
-        <h1>Adrénaline Racer</h1>
-        <p><strong>Date :</strong> 28 Juin 2025</p>
-        <p><strong>Lieu :</strong> 4 avenue de circuit Senna</p>
-        <p>67520,<br>STRASBOURG</p>
-        <p><strong>Nom :</strong> Elodie ROTTNER</p>
-        <p><strong>Billet #</strong> 102938</p>
-        <div class="qr-code">
-            <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&amp;data=JeanDupont_102938_Concert2025" alt="QR Code">
-        </div>
-        <div class="ticket-footer">
-            Veuillez présenter ce billet à l'entrée.<br>
-            Le QR code est unique.
-        </div>
-    </div>
-
-    <!--Footer-->
-        <div class="footer">
-            <footer>
-                <div class="footer-content">
-                    <p>&copy; 2025 Adrenaline racer. All rights reserved</p>
-                    <div class="social-icons">
-                        <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
-                        <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
-                        <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
-                        <a href="#"><ion-icon name="logo-linkedin"></ion-icon></a>
-                        <a href="./mentionslegales.html">Mentions légales</a>
-                        <a href="./cgv.html">CGV</a>
-                    </div>
+    <main>
+        <!-- Billet -->
+        <section class="ticket-border">
+            <article class="ticket">
+                <h1>F1 Racing Experience</h1>
+                <div class="ticket-info">
+                    <p><strong>Date :</strong> 12 juillet 2025</p>
+                    <p><strong>Lieu :</strong> Circuit Paul Ricard</p>
+                    <p><strong>Nom :</strong> Maxime Renault</p>
                 </div>
-            </footer>
-        </div>
+                <div class="features">
+                    <strong>Inclus :</strong>
+                    <ul>
+                        <li>🔧 Atelier mécanique</li>
+                        <li>🏁 Paddock interactif</li>
+                        <li>🧠 Quiz F1 & cadeaux</li>
+                        <li>🏎️ Démonstration de voitures F1</li>
+                    </ul>
+                </div>
+                <div class="qr-code">
+                    <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://f1experience.com/billet?id=MAX1234" alt="QR Code Billet">
+                </div>
+                <button class="download-btn" onclick="window.print()">📄 Télécharger le billet (PDF)</button>
+            </article>
+        </section>
 
+        <!-- Explications QR -->
+        <section class="explanation">
+            <h2>Comment fonctionne ce billet ?</h2>
+            <p>
+                Ce billet électronique vous donne accès à l'événement <strong>F1 Racing Experience</strong>.
+                Le QR code présent sur le billet est unique : il sera scanné à l’entrée pour valider votre accès.
+                Vous pouvez l'afficher sur votre smartphone ou l'imprimer.
+            </p>
+            <p>
+                Cliquez sur le bouton “Télécharger” pour générer une version PDF imprimable de votre billet.
+            </p>
+        </section>
+    </main>
 
-
-
- <script src="./billetterieScript.js"></script>
-<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <footer>
+        <p>&copy; 2025 Adrénaline Racer. Tous droits réservés.</p>
+        <nav class="social-icons">
+            <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+            <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+            <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+            <a href="#"><ion-icon name="logo-linkedin"></ion-icon></a>
+            <a href="./mentionslegales.html">Mentions légales</a>
+            <a href="./cgv.html">CGV</a>
+        </nav>
+    </footer>
+      <script src="./billetterieScript.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-
 </body>
 </html>
