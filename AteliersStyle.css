@@ -508,5 +508,10 @@ h1 {
     .card img {
         height: 120px;
     }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
    }
    
