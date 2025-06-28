@@ -173,7 +173,7 @@ ul li a.active, ul li a:hover {
     border-radius: 20px;
     backdrop-filter: blur(20px);
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
-    display: flex;
+    display: none;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -202,11 +202,13 @@ ul li a.active, ul li a:hover {
 
 .cover-box.active-popup {
     transform: scale(1);
+    display: flex;
 }
 
 .cover-box.active {
     transform: scale(1) translate(-50%, -50%);
     height: 520px;
+    display: flex;
 }
 .cover-box .form-box {
     width: 100%;
@@ -352,14 +354,18 @@ ul li a.active, ul li a:hover {
 
 /* Animation Titre Adrénaline Racer */
 .racing-title {
- font-size: 3rem;
- text-transform: uppercase;
- letter-spacing: 4px;
- color: #fff;
- position: relative;
- animation: shakeStart 2s ease, glowTrail 2.5s ease-out 2s forwards;
- display: inline-block;
+  font-size: 3rem;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  color: #fff;
+  position: relative;
+  animation: shakeStart 2s ease, glowTrail 2.5s ease-out 2s forwards;
+  display: block;
+  text-align: center;
+  width: 100%;
+  margin-top: 40px;
 }
+
 @keyframes shakeStart {
  0%, 100% { transform: translateX(0); }
  20% { transform: translateX(-4px); }
@@ -646,4 +652,11 @@ p {
     .animated-racer {
         font-size: 1.2rem;
     }
+}
+/* Mobile */
+@media (max-width: 600px) {
+  .racing-title {
+    font-size: 1.7rem;
+    margin-top: 100px;
+  }
 }

@@ -12,7 +12,10 @@ body{
     align-items: center;
     background: linear-gradient(to bottom, black, #3974E9);
     justify-content: center;
-    overflow: hidden;
+    overflow-x: hidden;
+}
+main {
+    margin-top: 90px; /* ajuste selon la hauteur de ton header */
 }
 
 header {
@@ -355,12 +358,16 @@ ul li a.active, ul li a:hover {
 /*MODALE*/
 
 .container {
+    margin-top: 60px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 1.5rem;
     padding: 2rem;
     max-width: 1200px;
-    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    box-sizing: border-box;
 }
 .card {
     background: #000;
@@ -388,8 +395,12 @@ ul li a.active, ul li a:hover {
 }
 
 h1 {
-    color: #fff;
+    font-size: 2.5rem;
+    color: #58a6ff;
+    margin: 60px 0 20px 0;
     text-align: center;
+    font-weight: bold;
+    letter-spacing: 2px;
 }
    /* Modale */
 .modal {
@@ -405,7 +416,7 @@ h1 {
 }
 .modal-content {
     background-color: #fff;
-    margin: 10% auto;
+    margin: 60px auto 10% auto; /* Ajoute une marge en haut */
     padding: 1rem;
     border-radius: 10px;
     width: 90%;
@@ -414,6 +425,7 @@ h1 {
     animation: fadeIn 0.3s ease;
     border: 2px solid #3974E9;
     text-align: center;
+    box-sizing: border-box;
     
 }
 .modal-content img {
@@ -499,12 +511,22 @@ h1 {
     header {
        font-size: 1.2rem;
      }
+    main {
+        margin-top: 90px;
+    }
     .card h3 {
        font-size: 1rem;
      }
     .modal-content {
-       margin: 20% auto;
-     }
+        margin: 40px auto 10% auto; /* Marge en haut réduite sur mobile */
+        width: 98vw;
+        max-width: 98vw;
+        padding: 0.5rem;
+    }
+    .modal-content img {
+        height: auto;
+        max-width: 95vw;
+    }
     .cards-container {
         flex-direction: column;
         gap: 12px;
@@ -519,8 +541,16 @@ h1 {
     }
 
     .container {
+        margin-top: 40px;
         display: flex;
         flex-direction: column;
+        gap: 12px;
+        padding: 1rem 0.2rem;
+        align-items: center;
+    }
+    h1 {
+        font-size: 1.2rem;
+        margin-top: 0;
     }
    }
 @media(max-width:858px) {
