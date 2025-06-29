@@ -368,6 +368,7 @@ ul li a.active, ul li a:hover {
     margin-right: auto;
     width: 100%;
     box-sizing: border-box;
+    padding-bottom: 70px; 
 }
 .card {
     background: #000;
@@ -449,14 +450,17 @@ h1 {
 /*footer */
 
 .footer {
-    position: absolute;
+    position: fixed;
+    left: 0;
     bottom: 0;
-    width: 100%;
+    width: 100vw;
     color: #fff;
-    padding: 10px 0;
+    padding: 12px 0 8px 0;
     text-align: center;
-    background: transparent;
+    background: rgba(0,0,0,0.7);
     backdrop-filter: blur(10px);
+    z-index: 100;
+    font-size: 1rem;
 }
 
 .footer-content {
@@ -547,12 +551,17 @@ h1 {
         gap: 12px;
         padding: 1rem 0.2rem;
         align-items: center;
+        padding-bottom: 90px;
     }
     h1 {
         font-size: 1.2rem;
         margin-top: 0;
     }
-   }
+    .footer {
+        font-size: 0.85rem;
+        padding: 16px 0 12px 0;
+    }
+}
 @media(max-width:858px) {
     .check-btn{
         display: block;
