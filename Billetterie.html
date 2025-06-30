@@ -6,6 +6,8 @@
     <link rel="stylesheet" href="billetterieStyle.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://fonts.cdnfonts.com/css/eurostile" rel="stylesheet">
+    <script defer src="billetterieScript.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <!-- Ionicons pour les icônes réseaux -->
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
@@ -13,83 +15,62 @@
 </head>
 
 <body>
-    <header>
-        <div class="navigation">
-            <input type="checkbox" id="check">
-            <label for="check" class="check-btn">
-                <i class="fas fa-bars"></i>
-            </label>
-            <label class="logo">Adrenaline Racer</label>
-            <ul>
-                <li><a href="login.html">Accueil</a></li>
-                <li><a href="ateliers.html">Ateliers</a></li>
-                <li><a href="billetterie.html">Billetterie</a></li>
-                <li><a href="programmation.html">Programmation</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><button class="btnLogin-popup">Login</button></li>
-            </ul>
+   <header>
+    <nav class="navbar">
+      <div class="logo">
+        <img src="./Asset/logosite/NouveauLogo.png" alt="Logo">
+      </div>
+      <ul class="nav-links">
+        <li class="nav-item">
+          <a href="index.html"><i class="fas fa-home"></i><span class="nav-text">Accueil</span></a>
+        </li>
+        <li class="nav-item">
+          <a href="ateliers.html"><i class="fas fa-tools"></i><span class="nav-text">Ateliers</span></a>
+        </li>
+        <li class="nav-item">
+          <a href="billetterie.html"><i class="fas fa-ticket-alt"></i><span class="nav-text">Billetterie</span></a>
+        </li>
+        <li class="nav-item">
+          <a href="programmation.html"><i class="fas fa-calendar-alt"></i><span class="nav-text">Programmation</span></a>
+        </li>
+        <li class="nav-item">
+          <a href="contact.html"><i class="fas fa-envelope"></i><span class="nav-text">Contact</span></a>
+        </li>
+        <li class="nav-item">
+          <button id="loginBtn" class="login-btn">
+            <i class="fas fa-user" id="loginIcon"></i><span class="nav-text">Connexion</span>
+          </button>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Modale Connexion/Enregistrement -->
+  <div id="loginModal" class="modal">
+    <div class="modal-content">
+      <span class="close" id="closeModal">&times;</span>
+      <div class="tabs">
+        <button class="tab active" onclick="openTab('login')">Connexion</button>
+        <button class="tab" onclick="openTab('register')">S’inscrire</button>
+      </div>
+      <div id="login" class="tab-content active">
+        <input type="email" placeholder="Email">
+        <input type="password" placeholder="Mot de passe">
+        <button class="neon">Se connecter</button>
+        <div class="social-login">
+          <button><i class="fab fa-google"></i> Google</button>
+          <button><i class="fab fa-apple"></i> Apple</button>
         </div>
-    </header>
-
-    <!--Login-->
-
-    <div class="cover-box">
-        <button class="icon-close"></button>
-        <div class="form-box login">
-            <h2>Login</h2>
-            <form action="#">
-                <div class="input-box">
-                    <span class="icon"><ion-icon name="mail-outline"></ion-icon></span>
-                    <input type="email" required>
-                    <label>Email</label>
-                </div>
-                 <div class="input-box">
-                    <span class="icon"><ion-icon name="lock-closed-outline"></ion-icon></span>
-                    <input type="password" required>
-                    <label>Password</label>
-                </div>
-                <div class="remember-forgot">
-                    <label><input type="checkbox">Remember me</label>
-                    <a href="#">Forgot password?</a>
-                </div>
-                <button type="submit" class="btn">Login</button>
-                <div class="login-register">
-                    <p>Don't have an account? <a href="#" class="register-link">Register</a></p>
-                </div>
-            </form>
-        </div>
-
-        <!--Registration-->
-
-        <div class="form-box register">
-            <h2>Register</h2>
-            <form action="#">
-                <div class="input-box">
-                    <span class="icon"><ion-icon name="person-outline"></ion-icon></span>
-                    <input type="text" required>
-                    <label>Username</label>
-                </div>
-                <div class="input-box">
-                    <span class="icon"><ion-icon name="mail-outline"></ion-icon></span>
-                    <input type="email" required>
-                    <label>Email</label>
-                </div>
-                 <div class="input-box">
-                    <span class="icon"><ion-icon name="lock-closed-outline"></ion-icon></span>
-                    <input type="password" required>
-                    <label>Password</label>
-                </div>
-                <div class="remember-forgot">
-                    <label><input type="checkbox">Agree to terms & conditions</label>
-                    <a href="#">Forgot password?</a>
-                </div>
-                <button type="submit" class="btn">Register</button>
-                <div class="login-register">
-                    <p>Already have an account? <a href="#" class="login-link">Register</a></p>
-                </div>
-            </form>
-        </div>
+      </div>
+      <div id="register" class="tab-content">
+        <input type="text" placeholder="Nom">
+        <input type="email" placeholder="Email">
+        <input type="password" placeholder="Mot de passe">
+        <button class="neon">S’inscrire</button>
+      </div>
     </div>
+  </div>
+
     <main>
         <!-- Billet -->
         <section class="ticket-border">
@@ -130,18 +111,16 @@
         </section>
     </main>
 
-    <footer>
-        <p>&copy; 2025 Adrénaline Racer. Tous droits réservés.</p>
-        <nav class="social-icons">
-            <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
-            <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
-            <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
-            <a href="#"><ion-icon name="logo-linkedin"></ion-icon></a>
-            <a href="./mentionslegales.html">Mentions légales</a>
-            <a href="./cgv.html">CGV</a>
-        </nav>
-    </footer>
-      <script src="./billetterieScript.js"></script>
+  <footer>
+    <div class="footer-circle">
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fab fa-linkedin"></i></a>
+      <a href="mentionslegales.html">Mentions légales</a>
+      <a href="cgv.html">CGV</a>
+    </div>
+  </footer>
+
   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>

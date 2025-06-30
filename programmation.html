@@ -5,83 +5,67 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Programmation</title>
     <link rel="stylesheet" href="./programmation.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script defer src="programmation.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link href="https://fonts.cdnfonts.com/css/eurostile" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <div class="navigation">
-            <input type="checkbox" id="check">
-            <label for="check" class="check-btn">
-                <i class="fas fa-bars"></i>
-            </label>
-            <label class="logo">Adrenaline Racer</label>
-            <ul>
-                <li><a href="index.html">Accueil</a></li>
-                <li><a href="ateliers.html">Ateliers</a></li>
-                <li><a href="billetterie.html" class="active">Billetterie</a></li>
-                <li><a href="programmation.html">Programmation</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><button class="btnLogin-popup">Login</button></li>
-            </ul>
-        </div>
-    </header>
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <img src="./Asset/logosite/NouveauLogo.png" alt="Logo">
+      </div>
+      <ul class="nav-links">
+        <li class="nav-item">
+          <a href="index.html"><i class="fas fa-home"></i><span class="nav-text">Accueil</span></a>
+        </li>
+        <li class="nav-item">
+          <a href="ateliers.html"><i class="fas fa-tools"></i><span class="nav-text">Ateliers</span></a>
+        </li>
+        <li class="nav-item">
+          <a href="billetterie.html"><i class="fas fa-ticket-alt"></i><span class="nav-text">Billetterie</span></a>
+        </li>
+        <li class="nav-item">
+          <a href="programmation.html"><i class="fas fa-calendar-alt"></i><span class="nav-text">Programmation</span></a>
+        </li>
+        <li class="nav-item">
+          <a href="contact.html"><i class="fas fa-envelope"></i><span class="nav-text">Contact</span></a>
+        </li>
+        <li class="nav-item">
+          <button id="loginBtn" class="login-btn">
+            <i class="fas fa-user" id="loginIcon"></i><span class="nav-text">Connexion</span>
+          </button>
+        </li>
+      </ul>
+    </nav>
+  </header>
 
-        <div class="cover-box">
-            <button class="icon-close"></button>
-            <div class="form-box login">
-                <h2>Login</h2>
-                <form action="#">
-                    <div class="input-box">
-                        <span class="icon"><ion-icon name="mail-outline"></ion-icon></span>
-                        <input type="email" required>
-                        <label>Email</label>
-                    </div>
-                    <div class="input-box">
-                        <span class="icon"><ion-icon name="lock-closed-outline"></ion-icon></span>
-                        <input type="password" required>
-                        <label>Password</label>
-                    </div>
-                    <div class="remember-forgot">
-                        <label><input type="checkbox">Remember me</label>
-                        <a href="#">Forgot password?</a>
-                    </div>
-                    <button type="submit" class="btn">Login</button>
-                    <div class="login-register">
-                        <p>Don't have an account? <a href="#" class="register-link">Register</a></p>
-                    </div>
-                </form>
-            </div>
-            <!-- Registration -->
-            <div class="form-box register">
-                <h2>Register</h2>
-                <form action="#">
-                    <div class="input-box">
-                        <span class="icon"><ion-icon name="person-outline"></ion-icon></span>
-                        <input type="text" required>
-                        <label>Username</label>
-                    </div>
-                    <div class="input-box">
-                        <span class="icon"><ion-icon name="mail-outline"></ion-icon></span>
-                        <input type="email" required>
-                        <label>Email</label>
-                    </div>
-                    <div class="input-box">
-                        <span class="icon"><ion-icon name="lock-closed-outline"></ion-icon></span>
-                        <input type="password" required>
-                        <label>Password</label>
-                    </div>
-                    <div class="remember-forgot">
-                        <label><input type="checkbox">Agree to terms & conditions</label>
-                        <a href="#">Forgot password?</a>
-                    </div>
-                    <button type="submit" class="btn">Register</button>
-                    <div class="login-register">
-                        <p>Already have an account? <a href="#" class="login-link">Login</a></p>
-                    </div>
-                </form>
-            </div>
+  <!-- Modale Connexion/Enregistrement -->
+  <div id="loginModal" class="modal">
+    <div class="modal-content">
+      <span class="close" id="closeModal">&times;</span>
+      <div class="tabs">
+        <button class="tab active" onclick="openTab('login')">Connexion</button>
+        <button class="tab" onclick="openTab('register')">S’inscrire</button>
+      </div>
+      <div id="login" class="tab-content active">
+        <input type="email" placeholder="Email">
+        <input type="password" placeholder="Mot de passe">
+        <button class="neon">Se connecter</button>
+        <div class="social-login">
+          <button><i class="fab fa-google"></i> Google</button>
+          <button><i class="fab fa-apple"></i> Apple</button>
         </div>
+      </div>
+      <div id="register" class="tab-content">
+        <input type="text" placeholder="Nom">
+        <input type="email" placeholder="Email">
+        <input type="password" placeholder="Mot de passe">
+        <button class="neon">S’inscrire</button>
+      </div>
+    </div>
+  </div>
+
     <main>
 
         <h1>Circuits de Formule 1</h1>
@@ -122,8 +106,5 @@
         </div>
     </footer>
 
-    <script src="programmation.js"></script>
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 </html>

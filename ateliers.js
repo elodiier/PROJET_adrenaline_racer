@@ -1,3 +1,4 @@
+/* Modale de connexion*/
 const modal = document.getElementById('loginModal');
 const btn = document.getElementById('loginBtn');
 const close = document.getElementById('closeModal');

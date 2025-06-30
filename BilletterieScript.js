@@ -1,47 +1,19 @@
-/* Script bouton Login/inscription */
-
-const btnPopup = document.querySelector('.btnLogin-popup');
-/* bouton pour ouvrir la popup*/
-const coverBox = document.querySelector('.cover-box');
-/* conteneur principal qui couvre l'écran quand la popup est affichée */
-const loginLink = document.querySelector('.login-link');
-/* lien pour basculer vers le formulaiare de connexion */
-const registerLink = document.querySelector('.register-link');
-/* lien pour basculer vers le formulaire d'inscription */
-const iconClose = document.querySelector('.icon-close');
-/* icone pour fermer la popup */
-
-function activateCoverBox(){
-    coverBox.classList.add('active');
+/* Modale de connexion*/
+const modal = document.getElementById('loginModal');
+const btn = document.getElementById('loginBtn');
+const close = document.getElementById('closeModal');
+btn.onclick = () => { modal.style.display = "flex"; }
+close.onclick = () => { modal.style.display = "none"; }
+window.onclick = (e) => { if (e.target == modal) modal.style.display = "none"; }
+function openTab(tab) {
+ document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+ document.querySelectorAll('.tab-content').forEach(tc => tc.classList.remove('active'));
+ document.querySelector(`.tab[onclick="openTab('${tab}')"]`).classList.add('active');
+ document.getElementById(tab).classList.add('active');
 }
-/* active le conteneur principal en ajoutant la classe 'active' */
-
-function deactivateCoverBox() {
-    coverBox.classList.remove('active');
-    coverBox.classList.remove('active-popup');
-}
-/* Retire les classes d'activation pour masquer complètement ma popup */
-
-function activatePopup(){
-    coverBox.classList.add('active-popup');
-}
-/* Active uniquement ma fenetre popup (ex:formulaire) */
-
-function deactivateCoverPopup(){
-    coverBox.classList.remove('active-popup');
-}
-/* Cache la fenêtre popup, mais laisse le fond actif */
-
-
-
-btnPopup.addEventListener('click', activateCoverBox);
-/*Quand on clique sur le bouton de la popup on active l'arrière plan (coverBox) via activateCoverBox ce qui ajoute la classe active */
-loginLink.addEventListener('click', deactivateCoverBox);
-/* Quand on clique sur le lien 'inscription' de la popup, cela ferme tout (fond et la popup)*/
-registerLink.addEventListener('click', activatePopup);
-/* Quand on clique sur la popup, celà affiche la fenêtre de la popup (ajoute la classe active-popup a coverBox) */
-iconClose.addEventListener('click', deactivateCoverBox);
-/* quand on clique sur l'icone fermeture cela désactive tout */
-
-
-
+// Simuler connexion / déconnexion pour changer l'icône
+let connected = false;
+btn.addEventListener('dblclick', () => {
+ connected = !connected;
+ document.getElementById('loginIcon').className = connected ? 'fas fa-sign-out-alt' : 'fas fa-user';
+});
