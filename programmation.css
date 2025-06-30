@@ -15,6 +15,9 @@ header {
  border-bottom: 4px solid #397AE9;
  border-radius: 0 0 50px 50px;
 }
+
+/*Nab Bar*/
+
 .navbar {
  display: flex;
  justify-content: space-between;
@@ -80,6 +83,7 @@ header {
 }
 
 /* Contenu princial */
+
 main {
     max-width: 1200px;
     margin: 40px auto 0 auto;
@@ -177,7 +181,9 @@ section img {
  text-decoration: none;
  font-size: 16px;
 }
+
 /* Agrandir la barre en desktop */
+
 @media (min-width: 1024px) {
  .navbar {
    padding: 30px 80px;
@@ -186,7 +192,9 @@ section img {
    font-size: 20px;
  }
 }
+
 /* Responsive : seulement icônes */
+
 @media (max-width: 768px) {
  .nav-text {
    display: none;

@@ -4,6 +4,7 @@
     box-sizing: border-box;
     font-family: 'eurostile';
 }
+
 body {
 margin: 0;
 background: linear-gradient(to bottom, black, #3974E9);
@@ -79,55 +80,6 @@ header {
  cursor: pointer;
  text-transform: uppercase;
  font-weight: bold;
-}
-
-/* Footer */
-
-.social-login button {
- background: none;
- border: 1px solid #397AE9;
- color: #397AE9;
- padding: 6px;
- margin-top: 5px;
- display: flex;
- align-items: center;
- gap: 5px;
- cursor: pointer;
-}
-.footer-circle {
- background: #000;
- border-top: 4px solid #397AE9;
- border-radius: 50px 50px 0 0;
- display: flex;
- justify-content: center;
- gap: 15px;
- padding: 15px;
- flex-wrap: wrap;
-}
-.footer-circle a {
- color: #fff;
- text-decoration: none;
- font-size: 16px;
-}
-/* Agrandir la barre en desktop */
-@media (min-width: 1024px) {
- .navbar {
-   padding: 30px 80px;
- }
- .nav-item a, .login-btn {
-   font-size: 20px;
- }
-}
-/* Responsive : seulement icônes */
-@media (max-width: 768px) {
- .nav-text {
-   display: none;
- }
- .nav-links {
-   flex-wrap: wrap;
-   justify-content: center;
-   gap: 15px;
- }
 }
 
 /* contenu */
@@ -377,8 +329,56 @@ header {
     font-weight: 500;
 }
 
+/* Footer */
 
+.social-login button {
+ background: none;
+ border: 1px solid #397AE9;
+ color: #397AE9;
+ padding: 6px;
+ margin-top: 5px;
+ display: flex;
+ align-items: center;
+ gap: 5px;
+ cursor: pointer;
+}
+.footer-circle {
+ background: #000;
+ border-top: 4px solid #397AE9;
+ border-radius: 50px 50px 0 0;
+ display: flex;
+ justify-content: center;
+ gap: 15px;
+ padding: 15px;
+ flex-wrap: wrap;
+}
+.footer-circle a {
+ color: #fff;
+ text-decoration: none;
+ font-size: 16px;
+}
 
+/* Agrandir la barre en desktop */
+@media (min-width: 1024px) {
+ .navbar {
+   padding: 30px 80px;
+ }
+ .nav-item a, .login-btn {
+   font-size: 20px;
+ }
+}
+
+/* Responsive : seulement icônes */
+@media (max-width: 768px) {
+ .nav-text {
+   display: none;
+ }
+ .nav-links {
+   flex-wrap: wrap;
+   justify-content: center;
+   gap: 15px;
+ }
+}
 
 /* responsive */
 

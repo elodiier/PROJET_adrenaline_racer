@@ -9,6 +9,9 @@ header {
  border-bottom: 4px solid #397AE9;
  border-radius: 0 0 50px 50px;
 }
+
+/* Nav Bar */
+
 .navbar {
  display: flex;
  justify-content: space-between;
@@ -72,7 +75,9 @@ header {
  text-transform: uppercase;
  font-weight: bold;
 }
+
 /* Animation Titre Adrénaline Racer */
+
 .racing-title {
   font-size: 3rem;
   text-transform: uppercase;
@@ -113,7 +118,9 @@ p {
     margin-bottom: 20px;
     margin-top: 20px;
 }
-   /*présentation*/
+
+  /*présentation*/
+
 #presentation {
  background: #000;
  padding: 20px 20px;
@@ -200,7 +207,9 @@ p {
   color: #3974E9;
   margin-bottom: 10px;
 }
+
 /* Animations */
+
 @keyframes fadeIn {
  0% { opacity: 0; transform: translateY(30px); }
  100% { opacity: 1; transform: translateY(0); }
@@ -209,6 +218,7 @@ p {
  0% { transform: scale(0.8); opacity: 0; }
  100% { transform: scale(1); opacity: 1; }
 }
+
 /* Footer */
 
 .social-login button {
@@ -237,7 +247,9 @@ p {
  text-decoration: none;
  font-size: 16px;
 }
+
 /* Agrandir la barre en desktop */
+
 @media (min-width: 1024px) {
  .navbar {
    padding: 30px 80px;
@@ -246,7 +258,9 @@ p {
    font-size: 20px;
  }
 }
+
 /* Responsive : seulement icônes */
+
 @media (max-width: 768px) {
  .nav-text {
    display: none;
