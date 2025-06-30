@@ -383,6 +383,34 @@ section img {
     text-decoration: underline;
 }
 
+/* Footer */
+
+.social-login button {
+ background: none;
+ border: 1px solid #397AE9;
+ color: #397AE9;
+ padding: 6px;
+ margin-top: 5px;
+ display: flex;
+ align-items: center;
+ gap: 5px;
+ cursor: pointer;
+}
+.footer-circle {
+ background: #000;
+ border-top: 4px solid #397AE9;
+ border-radius: 50px 50px 0 0;
+ display: flex;
+ justify-content: center;
+ gap: 15px;
+ padding: 15px;
+ flex-wrap: wrap;
+}
+.footer-circle a {
+ color: #fff;
+ text-decoration: none;
+ font-size: 16px;
+}
 
 /* Responsive design */
 @media (max-width: 858px) {
