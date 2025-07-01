@@ -1,136 +1,136 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ateliers - Adrenaline Racer</title>
     <link href="https://fonts.cdnfonts.com/css/eurostile" rel="stylesheet">
-    <script defer src="ateliers.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="./ateliers.css">
+    <script defer src="ateliers.js"></script>
 </head>
 <body>
-      <header>
-    <nav class="navbar">
-      <div class="logo">
-        <img src="./Asset/logosite/NouveauLogo.png" alt="Logo">
-      </div>
-      <ul class="nav-links">
-        <li class="nav-item">
-          <a href="index.html"><i class="fas fa-home"></i><span class="nav-text">Accueil</span></a>
-        </li>
-        <li class="nav-item">
-          <a href="ateliers.html"><i class="fas fa-tools"></i><span class="nav-text">Ateliers</span></a>
-        </li>
-        <li class="nav-item">
-          <a href="billetterie.html"><i class="fas fa-ticket-alt"></i><span class="nav-text">Billetterie</span></a>
-        </li>
-        <li class="nav-item">
-          <a href="programmation.html"><i class="fas fa-calendar-alt"></i><span class="nav-text">Programmation</span></a>
-        </li>
-        <li class="nav-item">
-          <a href="contact.html"><i class="fas fa-envelope"></i><span class="nav-text">Contact</span></a>
-        </li>
-        <li class="nav-item">
-          <button id="loginBtn" class="login-btn">
-            <i class="fas fa-user" id="loginIcon"></i><span class="nav-text">Connexion</span>
-          </button>
-        </li>
-      </ul>
-    </nav>
-  </header>
+    <!-- Header & Navigation -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="./Asset/logosite/NouveauLogo.png" alt="Logo">
+            </div>
+            <ul class="nav-links">
+                <li class="nav-item">
+                    <a href="index.html"><i class="fas fa-home"></i><span class="nav-text">Accueil</span></a>
+                </li>
+                <li class="nav-item">
+                    <a href="ateliers.html"><i class="fas fa-tools"></i><span class="nav-text">Ateliers</span></a>
+                </li>
+                <li class="nav-item">
+                    <a href="billetterie.html"><i class="fas fa-ticket-alt"></i><span class="nav-text">Billetterie</span></a>
+                </li>
+                <li class="nav-item">
+                    <a href="programmation.html"><i class="fas fa-calendar-alt"></i><span class="nav-text">Programmation</span></a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html"><i class="fas fa-envelope"></i><span class="nav-text">Contact</span></a>
+                </li>
+                <li class="nav-item">
+                    <button id="loginBtn" class="login-btn">
+                        <i class="fas fa-user" id="loginIcon"></i><span class="nav-text">Connexion</span>
+                    </button>
+                </li>
+            </ul>
+        </nav>
+    </header>
 
-  <!-- Modale Connexion/Enregistrement -->
-  <div id="loginModal" class="modal">
-    <div class="modal-content">
-      <span class="close" id="closeModal">&times;</span>
-      <div class="tabs">
-        <button class="tab active" onclick="openTab('login')">Connexion</button>
-        <button class="tab" onclick="openTab('register')">S’inscrire</button>
-      </div>
-      <div id="login" class="tab-content active">
-        <input type="email" placeholder="Email">
-        <input type="password" placeholder="Mot de passe">
-        <button class="neon">Se connecter</button>
-        <div class="social-login">
-          <button><i class="fab fa-google"></i> Google</button>
-          <button><i class="fab fa-apple"></i> Apple</button>
+    <!-- Modale Connexion/Enregistrement -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="closeModal">&times;</span>
+            <div class="tabs">
+                <button class="tab active" onclick="openTab('login')">Connexion</button>
+                <button class="tab" onclick="openTab('register')">S’inscrire</button>
+            </div>
+            <div id="login" class="tab-content active">
+                <input type="email" placeholder="Email">
+                <input type="password" placeholder="Mot de passe">
+                <button class="neon">Se connecter</button>
+                <div class="social-login">
+                    <button><i class="fab fa-google"></i> Google</button>
+                    <button><i class="fab fa-apple"></i> Apple</button>
+                </div>
+            </div>
+            <div id="register" class="tab-content">
+                <input type="text" placeholder="Nom">
+                <input type="email" placeholder="Email">
+                <input type="password" placeholder="Mot de passe">
+                <button class="neon">S’inscrire</button>
+            </div>
         </div>
-      </div>
-      <div id="register" class="tab-content">
-        <input type="text" placeholder="Nom">
-        <input type="email" placeholder="Email">
-        <input type="password" placeholder="Mot de passe">
-        <button class="neon">S’inscrire</button>
-      </div>
     </div>
-  </div>
 
-    <main>
-        <h1>Expérience Interactive</h1>
-        <div class="container">
-            <div class="card" onclick="openModal('modal1')">
-                <img src="./Asset/Icones/atelier_meca.png" alt="Atelier mécanique">
-                <h3>Atelier Mécanique</h3>
-            </div>
-            <div class="card" onclick="openModal('modal2')">
-                <img src="./Asset/Icones/simulateur.png" alt="Paddock interactif">
-                <h3>Paddock Interactif</h3>
-            </div>
-            <div class="card" onclick="openModal('modal3')">
-                <img src="./Asset/Icones/Quizz.png" alt="Quizz">
-                <h3>Quizz</h3>
-            </div>
-            <div class="card" onclick="openModal('modal4')">
-                <img src="./Asset/Icones/demo_voiture.png" alt="Démonstration de voiture">
-                <h3>Démonstration de Voiture</h3>
+    <!-- Cartes ateliers -->
+    <div class="cards-container">
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="./Asset/Icones/atelier_meca.png" alt="Atelier mécanique">
+                    <h3>Atelier Mécanique</h3>
+                </div>
+                <div class="flip-card-back">
+                    <h3>Atelier Mécanique</h3>
+                    <p>Découvrez les secrets de la mécanique automobile moderne.</p>
+                </div>
             </div>
         </div>
-        <!-- Modales -->
-        <div id="modal1" class="modal">
-            <div class="modal-content">
-                <span class="close" onclick="closeModal('modal1')">&times;</span>
-                <img src="./Asset/Icones/atelier_meca.png" alt="Atelier mécanique">
-                <h2>Atelier Mécanique</h2>
-                <p>Découvrez les dessous d’un atelier mécanique en pleine action, apprenez comment les moteurs sont démontés et réparés !</p>
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="./Asset/Icones/simulateur.png" alt="Paddock interactif">
+                    <h3>Paddock Interactif</h3>
+                </div>
+                <div class="flip-card-back">
+                    <h3>Paddock Interactif</h3>
+                    <p>Interagissez avec nos experts et explorez les coulisses du paddock.</p>
+                </div>
             </div>
         </div>
-        <div id="modal2" class="modal">
-            <div class="modal-content">
-                <span class="close" onclick="closeModal('modal2')">&times;</span>
-                <img src="./Asset/Icones/simulateur.png" alt="Paddock interactif">
-                <h2>Paddock Interactif</h2>
-                <p>Interagissez avec les véhicules, configurez-les en temps réel et explorez les technologies embarquées dans un paddock numérique.</p>
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="./Asset/Icones/Quizz.png" alt="Quizz">
+                    <h3>Quizz</h3>
+                </div>
+                <div class="flip-card-back">
+                    <h3>Quizz</h3>
+                    <p>Testez vos connaissances en compétition automobile.</p>
+                </div>
             </div>
         </div>
-        <div id="modal3" class="modal">
-            <div class="modal-content">
-                <span class="close" onclick="closeModal('modal3')">&times;</span>
-                <img src="./Asset/Icones/Quizz.png" alt="Quizz">
-                <h2>Quizz</h2>
-                <p>Testez vos connaissances en mécanique, en technologie auto et en sécurité routière avec notre quizz interactif.</p>
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="./Asset/Icones/demo_voiture.png" alt="Démonstration de voiture">
+                    <h3>Démonstration</h3>
+                </div>
+                <div class="flip-card-back">
+                    <h3>Démonstration de voiture</h3>
+                    <p>Vivez des démonstrations exclusives de nos modèles emblématiques.</p>
+                </div>
             </div>
         </div>
-        <div id="modal4" class="modal">
-            <div class="modal-content">
-                <span class="close" onclick="closeModal('modal4')">&times;</span>
-                <img src="./Asset/Icones/demo_voiture.png" alt="Démonstration de voiture">
-                <h2>Démonstration de Voiture</h2>
-                <p>Assistez à une démonstration en direct des capacités de véhicules de haute performance sur piste.</p>
-            </div>
-        </div>
-    </main>
-
-  <footer>
-    <div class="footer-circle">
-      <a href="#"><i class="fab fa-instagram"></i></a>
-      <a href="#"><i class="fab fa-twitter"></i></a>
-      <a href="#"><i class="fab fa-linkedin"></i></a>
-      <a href="mentionslegales.html">Mentions légales</a>
-      <a href="cgv.html">CGV</a>
     </div>
-  </footer>
 
+    <!-- Footer -->
+    <footer>
+        <div class="footer-circle">
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="mentionslegales.html">Mentions légales</a>
+            <a href="cgv.html">CGV</a>
+        </div>
+    </footer>
+
+    <!-- Icones Ionicons -->
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
