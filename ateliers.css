@@ -17,6 +17,9 @@ body{
 main {
     margin-top: 90px; /* ajuste selon la hauteur de ton header */
 }
+
+/* Nav Barre*/
+
 header {
  background: #000;
  border-bottom: 4px solid #397AE9;
