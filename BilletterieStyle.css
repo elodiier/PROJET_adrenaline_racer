@@ -10,19 +10,18 @@
     --gray: #1a1a1a;
     --white: #f1f1f1;
 }
-   
+
 body {
-    margin: 20px;
     font-family: 'eurostile';
-    background-color: var(--dark);
+    background: linear-gradient(to bottom, black, #336ED4);
     color: var(--white);
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    padding: 0 10px;;
-    background: linear-gradient(to bottom, black, #336ED4);
-
+    padding: 0 10px;
+    padding-bottom: 80px; /* Espace pour le footer fixe */
 }
+
 main {
     flex: 1;
     padding: 20px;
@@ -32,75 +31,75 @@ main {
 }
 
 header {
- background: #000;
- border-bottom: 4px solid #336ED4;
- border-radius: 0 0 50px 50px;
+    background: #000;
+    border-bottom: 4px solid #336ED4;
+    border-radius: 0 0 50px 50px;
 }
 .navbar {
- display: flex;
- justify-content: space-between;
- align-items: center;
- padding: 25px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 50px;
 }
 .logo img {
- height: 70px;
+    height: 70px;
 }
 .nav-links {
- list-style: none;
- display: flex;
- gap: 25px;
- padding: 0;
- margin: 0;
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    padding: 0;
+    margin: 0;
 }
 .nav-item a, .login-btn {
- color: #fff;
- text-decoration: none;
- font-size: 18px;
- background: none;
- border: none;
- cursor: pointer;
- display: flex;
- align-items: center;
- gap: 6px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 6px;
 }
 .modal {
- display: none;
- position: fixed; top: 0; left: 0;
- width: 100%; height: 100%;
- background: rgba(0,0,0,0.8);
- justify-content: center; align-items: center;
+    display: none;
+    position: fixed; top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0,0,0,0.8);
+    justify-content: center; align-items: center;
 }
 .modal-content {
- background: #111;
- border: 2px solid #336ED4;
- border-radius: 12px;
- padding: 20px;
- width: 90%; max-width: 400px;
+    background: #111;
+    border: 2px solid #336ED4;
+    border-radius: 12px;
+    padding: 20px;
+    width: 90%; max-width: 400px;
 }
 .tabs { display: flex; }
 .tab {
- flex: 1;
- background: none;
- border: none;
- color: #336ED4;
- padding: 10px;
- font-weight: bold;
- cursor: pointer;
+    flex: 1;
+    background: none;
+    border: none;
+    color: #336ED4;
+    padding: 10px;
+    font-weight: bold;
+    cursor: pointer;
 }
 .tab.active { border-bottom: 2px solid #336ED4; }
 .tab-content { display: none; flex-direction: column; gap: 10px; }
 .tab-content.active { display: flex; }
 .neon {
- background: none;
- border: 2px solid #336ED4;
- color: #336ED4;
- padding: 8px;
- cursor: pointer;
- text-transform: uppercase;
- font-weight: bold;
+    background: none;
+    border: 2px solid #336ED4;
+    color: #336ED4;
+    padding: 8px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
 }
-  
-/*ticket */
+
+/* Ticket */
 .ticket-border {
     background: url('https://i.imgur.com/o8YxXhM.png') repeat;
     background-size: 40px 40px;
@@ -109,152 +108,164 @@ header {
     box-shadow: 0 0 20px #336ED4;
     margin-top: 50px; 
 }
-   .ticket {
-
-     background-color: #141414;
-     border-radius: 10px;
-     padding: 24px;
-     max-width: 480px;
-     width: 100%;
-   }
-   .ticket h1 {
-     text-align: center;
-     color: #336ED4;
-     font-size: 1.8rem;
-     margin-bottom: 16px;
-   }
-   .ticket-info {
-     font-size: 1rem;
-     margin-bottom: 16px;
-   }
-   .ticket-info div {
-     margin: 4px 0;
-   }
-   .ticket-info strong {
-     color: #00aaff;
-   }
-   .features {
-     background-color: #1c1c1c;
-     padding: 12px;
-     border-left: 4px solid #336ED4;
-     border-radius: 8px;
-     margin-bottom: 16px;
-   }
-   .features ul {
-     padding-left: 20px;
-     margin: 0;
-   }
-   .features li {
-     margin-bottom: 6px;
-   }
-   .qr-code {
-     text-align: center;
-     margin: 20px 0;
-   }
-   .qr-code img {
-     width: 150px;
-     height: 150px;
-     border: 2px solid #336ED4;
-     border-radius: 8px;
-   }
-   .download-btn {
-     display: block;
-     margin: 0 auto;
-     padding: 12px 24px;
-     background-color: #336ED4;
-     border: none;
-     color: white;
-     font-size: 1rem;
-     border-radius: 8px;
-     cursor: pointer;
-     transition: background 0.3s ease;
-   }
-   .download-btn:hover {
-     background-color: #336ED4;
-   }
-   .explanation {
-     max-width: 800px;
-     background-color: #1c1c1c;
-     border-left: 4px solid #336ED4;
-     border-radius: 8px;
-     padding: 16px 20px;
-     margin-top: 30px;
-     margin-bottom: 25px;
-     line-height: 1.5;
-   }
-   .explanation h2 {
-     margin-top: 0;
-     color: #336ED4;
-     font-size: 1.2rem;
-   }
-/* Footer */
-
-.social-login button {
- background: none;
- border: 1px solid #336ED4;
- color: #336ED4;
- padding: 6px;
- margin-top: 5px;
- display: flex;
- align-items: center;
- gap: 5px;
- cursor: pointer;
+.ticket {
+    background-color: #141414;
+    border-radius: 10px;
+    padding: 24px;
+    max-width: 480px;
+    width: 100%;
 }
+.ticket h1 {
+    text-align: center;
+    color: #336ED4;
+    font-size: 1.8rem;
+    margin-bottom: 16px;
+}
+.ticket-info {
+    font-size: 1rem;
+    margin-bottom: 16px;
+}
+.ticket-info div {
+    margin: 4px 0;
+}
+.ticket-info strong {
+    color: #00aaff;
+}
+.features {
+    background-color: #1c1c1c;
+    padding: 12px;
+    border-left: 4px solid #336ED4;
+    border-radius: 8px;
+    margin-bottom: 16px;
+}
+.features ul {
+    padding-left: 20px;
+    margin: 0;
+}
+.features li {
+    margin-bottom: 6px;
+}
+.qr-code {
+    text-align: center;
+    margin: 20px 0;
+}
+.qr-code img {
+    width: 150px;
+    height: 150px;
+    border: 2px solid #336ED4;
+    border-radius: 8px;
+}
+.download-btn {
+    display: block;
+    margin: 0 auto;
+    padding: 12px 24px;
+    background-color: #336ED4;
+    border: none;
+    color: white;
+    font-size: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+.download-btn:hover {
+    background-color: #336ED4;
+}
+.explanation {
+    max-width: 800px;
+    background-color: #1c1c1c;
+    border-left: 4px solid #336ED4;
+    border-radius: 8px;
+    padding: 16px 20px;
+    margin-top: 30px;
+    margin-bottom: 25px;
+    line-height: 1.5;
+}
+.explanation h2 {
+    margin-top: 0;
+    color: #336ED4;
+    font-size: 1.2rem;
+}
+
+/* Footer */
 .footer-circle {
- background: #000;
- border-top: 4px solid #336ED4;
- border-radius: 50px 50px 0 0;
- display: flex;
- justify-content: center;
- align-items: center;
- gap: 15px;
- padding: 15px;
- position: fixed;
- bottom: 0;
- width: 100%;
- z-index: 1;
+    background: #000;
+    border-top: 4px solid #336ED4;
+    border-radius: 50px 50px 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    padding: 15px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    z-index: 10;
+    box-sizing: border-box;
+    flex-wrap: wrap;
 }
 .footer-circle a {
- color: #fff;
- text-decoration: none;
- font-size: 16px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
 }
-/* Agrandir la barre en desktop */
-@media (min-width: 1024px) {
- .navbar {
-   padding: 30px 80px;
- }
- .nav-item a, .login-btn {
-   font-size: 20px;
- }
-}
-/* Responsive : seulement icônes */
-@media (max-width: 768px) {
- .nav-text {
-   display: none;
- }
- .nav-links {
-   flex-wrap: wrap;
-   justify-content: center;
-   gap: 15px;
- }
-}
-   /*responsive */
 
-   @media (max-width: 500px) {
-     .ticket {
-       padding: 16px;
-     }
-     .ticket-border {
+/* Social login button */
+.social-login button {
+    background: none;
+    border: 1px solid #336ED4;
+    color: #336ED4;
+    padding: 6px;
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+}
+
+/* Responsive : desktop */
+@media (min-width: 1024px) {
+    .navbar {
+        padding: 30px 80px;
+    }
+    .nav-item a, .login-btn {
+        font-size: 20px;
+    }
+}
+
+/* Responsive : mobile/tablette */
+@media (max-width: 768px) {
+    .nav-text {
+        display: none;
+    }
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+    .footer-circle {
+        flex-direction: row;
+        gap: 10px;
+        padding: 20px 0 10px 0;
+        border-radius: 30px 30px 0 0;
+    }
+}
+
+/* Responsive ticket */
+@media (max-width: 500px) {
+    .ticket {
+        padding: 16px;
+    }
+    .ticket-border {
         margin-top: 80px;
-     }
-     .ticket h1 {
-       font-size: 1.4rem;
-     }
-     .download-btn {
-       font-size: 0.9rem;
-     }
-     .features ul {
-       padding-left: 16px;
-     }
-   }
+    }
+    .ticket h1 {
+        font-size: 1.4rem;
+    }
+    .download-btn {
+        font-size: 0.9rem;
+    }
+    .features ul {
+        padding-left: 16px;
+    }
+}

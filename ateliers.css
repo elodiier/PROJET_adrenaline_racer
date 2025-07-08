@@ -6,10 +6,6 @@
     font-family: 'eurostile';
 }
 
-html, body {
-    height: 100%;
-    min-height: 100vh;
-}
 
 body {
     min-height: 100vh;
@@ -30,8 +26,7 @@ body {
 
 main {
     flex: 1 0 auto;
-    display: flex;
-    flex-direction: column;
+
 }
 
 
@@ -138,14 +133,14 @@ header {
 
 /* Cards */
 .cards-container {
-    min-height: 60vh; /* pour éviter que le footer masque les cards si peu de contenu */
+    min-height: 60vh;
     display: flex;
-    justify-content: center;   /* centre horizontalement */
-    align-items: center;       /* centre verticalement */
+    justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
     gap: 20px;
     padding: 40px 20px;
-    margin-top: auto;
+    /* margin-top: auto;  <-- SUPPRIMÉ */
 }
 .flip-card {
     background-color: transparent;
@@ -210,6 +205,7 @@ footer {
     align-items: center;
     padding: 0;
 }
+
 .footer-circle {
     background: #000;
     border-top: 4px solid #336ED4;
@@ -222,7 +218,10 @@ footer {
     align-items: center;
     width: 100vw;
     z-index: 10;
+    flex-wrap: wrap;
+    box-sizing: border-box;
 }
+
 .footer-circle a {
     color: #fff;
     text-decoration: none;
@@ -263,8 +262,15 @@ footer {
         justify-content: center;
         gap: 15px;
     }
-
-    
+        .footer-circle {
+        flex-direction: row;
+        gap: 10px;
+        padding: 20px 0 10px 0;
+        border-radius: 30px 30px 0 0;
+    }
+    footer {
+        padding-bottom: env(safe-area-inset-bottom, 0);
+    }
 }
 
 /* Modal responsive */
