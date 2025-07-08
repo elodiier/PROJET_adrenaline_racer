@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ateliers - Adrenaline Racer</title>
+    <link href="https://fonts.cdnfonts.com/css/eurostile" rel="stylesheet">
+    <script defer src="modale.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <main>
+        <h1>Expérience Interactive</h1>
+        <div class="container">
+            <div class="card" onclick="openModal('modal1')">
+                <img src="./Asset/Icones/atelier_meca.png" alt="Atelier mécanique">
+                <h3>Atelier Mécanique</h3>
+            </div>
+            <div class="card" onclick="openModal('modal2')">
+                <img src="./Asset/Icones/simulateur.png" alt="Paddock interactif">
+                <h3>Paddock Interactif</h3>
+            </div>
+            <div class="card" onclick="openModal('modal3')">
+                <img src="./Asset/Icones/Quizz.png" alt="Quizz">
+                <h3>Quizz</h3>
+            </div>
+            <div class="card" onclick="openModal('modal4')">
+                <img src="./Asset/Icones/demo_voiture.png" alt="Démonstration de voiture">
+                <h3>Démonstration de Voiture</h3>
+            </div>
+        </div>
+        <!-- Modales -->
+        <div id="modal1" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('modal1')">&times;</span>
+                <img src="./Asset/Icones/atelier_meca.png" alt="Atelier mécanique">
+                <h2>Atelier Mécanique</h2>
+                <p>Découvrez les dessous d’un atelier mécanique en pleine action, apprenez comment les moteurs sont démontés et réparés !</p>
+            </div>
+        </div>
+        <div id="modal2" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('modal2')">&times;</span>
+                <img src="./Asset/Icones/simulateur.png" alt="Paddock interactif">
+                <h2>Paddock Interactif</h2>
+                <p>Interagissez avec les véhicules, configurez-les en temps réel et explorez les technologies embarquées dans un paddock numérique.</p>
+            </div>
+        </div>
+        <div id="modal3" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('modal3')">&times;</span>
+                <img src="./Asset/Icones/Quizz.png" alt="Quizz">
+                <h2>Quizz</h2>
+                <p>Testez vos connaissances en mécanique, en technologie auto et en sécurité routière avec notre quizz interactif.</p>
+            </div>
+        </div>
+        <div id="modal4" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('modal4')">&times;</span>
+                <img src="./Asset/Icones/demo_voiture.png" alt="Démonstration de voiture">
+                <h2>Démonstration de Voiture</h2>
+                <p>Assistez à une démonstration en direct des capacités de véhicules de haute performance sur piste.</p>
+            </div>
+        </div>
+    </main>
+    
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
