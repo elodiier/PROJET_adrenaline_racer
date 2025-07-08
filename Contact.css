@@ -7,7 +7,7 @@
 
 body {
 margin: 0;
-background: linear-gradient(to bottom, black, #3974E9);
+background: linear-gradient(to bottom, black, #336ED4);
 color: #fff;
 font-family: 'eurostile';
 }
@@ -15,7 +15,7 @@ font-family: 'eurostile';
 /* Barre de nav */
 header {
  background: #000;
- border-bottom: 4px solid #397AE9;
+ border-bottom: 4px solid #336ED4;
  border-radius: 0 0 50px 50px;
 }
 .navbar {
@@ -54,7 +54,7 @@ header {
 }
 .modal-content {
  background: #111;
- border: 2px solid #397AE9;
+ border: 2px solid #336ED4;
  border-radius: 12px;
  padding: 20px;
  width: 90%; max-width: 400px;
@@ -64,18 +64,18 @@ header {
  flex: 1;
  background: none;
  border: none;
- color: #397AE9;
+ color: #336ED4;
  padding: 10px;
  font-weight: bold;
  cursor: pointer;
 }
-.tab.active { border-bottom: 2px solid #397AE9; }
+.tab.active { border-bottom: 2px solid #336ED4; }
 .tab-content { display: none; flex-direction: column; gap: 10px; }
 .tab-content.active { display: flex; }
 .neon {
  background: none;
- border: 2px solid #397AE9;
- color: #397AE9;
+ border: 2px solid #336ED4;
+ color: #336ED4;
  padding: 8px;
  cursor: pointer;
  text-transform: uppercase;
@@ -93,7 +93,7 @@ header {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background: linear-gradient(to bottom, black, #3974E9);
+    background: linear-gradient(to bottom, black, #336ED4);
 
 }
 
@@ -144,7 +144,7 @@ header {
     position: relative;
     min-width: 60px;
     height: 60px;
-    background: repeating-conic-gradient(from 27.5deg, #3974E9 0%, #3974E9 10%, transparent 10%, transparent 50%);
+    background: repeating-conic-gradient(from 27.5deg, #336ED4 0%, #336ED4 10%, transparent 10%, transparent 50%);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -154,7 +154,7 @@ header {
     content: '';
     position: absolute;
     inset: 0;
-    background: repeating-conic-gradient(from 117.5deg, #3974E9 0%, #3974E9 10%, transparent 10%, transparent 50%);
+    background: repeating-conic-gradient(from 117.5deg, #336ED4 0%, #336ED4 10%, transparent 10%, transparent 50%);
 }
 
 .container .contactInfo .box .icon::after {
@@ -167,7 +167,7 @@ header {
 .container .contactInfo .box .icon b {
     position: absolute;
     inset: 8px;
-    background: #3974E9;
+    background: #336ED4;
     z-index: 2;
 }
 
@@ -190,14 +190,14 @@ header {
 
 .container .contactInfo .box .text h3 {
     font-weight: 500;
-    color: #3974E9;
+    color: #336ED4;
 }
 
 .container .contactInfo .txt {
     color: #fff;
     margin-top: 50px;
     font-weight: 500;
-    border-left: 50px solid #3974E9;
+    border-left: 50px solid #336ED4;
     padding-left: 10px;
     line-height: 1em;
 }
@@ -221,13 +221,13 @@ header {
 
 .container .contactInfo .sci li a:hover {
     color: #fff;
-    filter: drop-shadow(0 0 5px #3974E9);
+    filter: drop-shadow(0 0 5px #336ED4);
 }
 
 .container .contactForm {
     position: relative;
     width: 40%;
-    background: repeating-conic-gradient(from var(--a), #3974E9 0%, #3974E9 10%, transparent 10%, transparent 50%);
+    background: repeating-conic-gradient(from var(--a), #336ED4 0%, #336ED4 10%, transparent 10%, transparent 50%);
     animation: animate 6s linear infinite;
     padding: 60px;
 }
@@ -236,7 +236,7 @@ header {
     content: '';
     position: absolute;
     inset: 0;
-    background: repeating-conic-gradient(from var(--a), #3974E9 0%, #3974E9 10%, transparent 10%, transparent 50%);
+    background: repeating-conic-gradient(from var(--a), #336ED4 0%, #336ED4 10%, transparent 10%, transparent 50%);
     animation: animate 6s linear infinite;
     animation-delay: -1.5s;
 }
@@ -291,7 +291,7 @@ header {
     margin: 10px 0;
     border: none;
     background: transparent;
-    border-bottom: 2px solid #3974E9;
+    border-bottom: 2px solid #336ED4;
     color: #fff;
     outline: none;
     resize: none;
@@ -313,14 +313,14 @@ header {
 
 .container .contactForm form .inputBox input:valid ~ span,
 .container .contactForm form .inputBox textarea:valid ~ span {
-    color: #3974E9;
+    color: #336ED4;
     font-size: 0.9em;
     transform: translateY(-24px);
 }
 
 .container .contactForm form .inputBox input[type="submit"] {
     width: 100%;
-    background: #3974E9;
+    background: #336ED4;
     color: #fff;
     border: none;
     cursor: pointer;
@@ -333,8 +333,8 @@ header {
 
 .social-login button {
  background: none;
- border: 1px solid #397AE9;
- color: #397AE9;
+ border: 1px solid #336ED4;
+ color: #336ED4;
  padding: 6px;
  margin-top: 5px;
  display: flex;
@@ -344,7 +344,7 @@ header {
 }
 .footer-circle {
  background: #000;
- border-top: 4px solid #397AE9;
+ border-top: 4px solid #336ED4;
  border-radius: 50px 50px 0 0;
  display: flex;
  justify-content: center;

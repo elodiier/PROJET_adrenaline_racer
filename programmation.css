@@ -6,13 +6,13 @@
 }
 body {
 margin: 0;
-background: linear-gradient(to bottom, black, #3974E9);
+background: linear-gradient(to bottom, black, #336ED4);
 color: #fff;
 font-family: 'eurostile';
 }
 header {
  background: #000;
- border-bottom: 4px solid #397AE9;
+ border-bottom: 4px solid #336ED4;
  border-radius: 0 0 50px 50px;
 }
 
@@ -54,7 +54,7 @@ header {
 }
 .modal-content {
  background: #111;
- border: 2px solid #397AE9;
+ border: 2px solid #336ED4;
  border-radius: 12px;
  padding: 20px;
  width: 90%; max-width: 400px;
@@ -64,18 +64,18 @@ header {
  flex: 1;
  background: none;
  border: none;
- color: #397AE9;
+ color: #336ED4;
  padding: 10px;
  font-weight: bold;
  cursor: pointer;
 }
-.tab.active { border-bottom: 2px solid #397AE9; }
+.tab.active { border-bottom: 2px solid #336ED4; }
 .tab-content { display: none; flex-direction: column; gap: 10px; }
 .tab-content.active { display: flex; }
 .neon {
  background: none;
- border: 2px solid #397AE9;
- color: #397AE9;
+ border: 2px solid #336ED4;
+ color: #336ED4;
  padding: 8px;
  cursor: pointer;
  text-transform: uppercase;
@@ -157,8 +157,8 @@ section img {
 
 .social-login button {
  background: none;
- border: 1px solid #397AE9;
- color: #397AE9;
+ border: 1px solid #336ED4;
+ color: #336ED4;
  padding: 6px;
  margin-top: 5px;
  display: flex;
@@ -168,7 +168,7 @@ section img {
 }
 .footer-circle {
  background: #000;
- border-top: 4px solid #397AE9;
+ border-top: 4px solid #336ED4;
  border-radius: 50px 50px 0 0;
  display: flex;
  justify-content: center;

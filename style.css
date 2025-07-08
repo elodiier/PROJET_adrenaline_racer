@@ -1,7 +1,7 @@
 body {
 margin: 0;
 padding: 0;
-background: linear-gradient(to bottom, black, #3974E9);
+background: linear-gradient(to bottom, black, #336ED4);
 color: #fff;
 font-family: 'eurostile';
 background-size: cover;
@@ -9,7 +9,7 @@ background-size: cover;
 
 header {
  background: #000;
- border-bottom: 4px solid #397AE9;
+ border-bottom: 4px solid #336ED4;
  border-radius: 0 0 50px 50px;
 }
 
@@ -51,7 +51,7 @@ header {
 }
 .modal-content {
  background: #111;
- border: 2px solid #397AE9;
+ border: 2px solid #336ED4;
  border-radius: 12px;
  padding: 20px;
  width: 90%; max-width: 400px;
@@ -61,18 +61,18 @@ header {
  flex: 1;
  background: none;
  border: none;
- color: #397AE9;
+ color: #336ED4;
  padding: 10px;
  font-weight: bold;
  cursor: pointer;
 }
-.tab.active { border-bottom: 2px solid #397AE9; }
+.tab.active { border-bottom: 2px solid #336ED4; }
 .tab-content { display: none; flex-direction: column; gap: 10px; }
 .tab-content.active { display: flex; }
 .neon {
  background: none;
- border: 2px solid #397AE9;
- color: #397AE9;
+ border: 2px solid #336ED4;
+ color: #336ED4;
  padding: 8px;
  cursor: pointer;
  text-transform: uppercase;
@@ -103,16 +103,16 @@ header {
 }
 @keyframes glowTrail {
  0% {
-   text-shadow: 0 0 0 #3974E9;
+   text-shadow: 0 0 0 #336ED4;
    letter-spacing: 4px;
  }
  50% {
-   text-shadow: 0 0 15px #3974E9, 0 0 30px #3974E9;
+   text-shadow: 0 0 15px #336ED4, 0 0 30px #336ED4;
    letter-spacing: 6px;
    transform: scale(1.05);
  }
  100% {
-   text-shadow: 0 0 8px #3974E9;
+   text-shadow: 0 0 8px #336ED4;
    letter-spacing: 5px;
    transform: scale(1);
  }
@@ -128,7 +128,7 @@ p {
  background: #000;
  padding: 20px 20px;
  animation: fadeIn 1.5s ease-out;
- border: #3974E9 2px solid;
+ border: #336ED4 2px solid;
 }
 .presentation-content {
  display: flex;
@@ -145,7 +145,7 @@ p {
 }
 .presentation-content .text h2 {
  font-size: 2.5rem;
- color: #3974E9;
+ color: #336ED4;
  margin-bottom: 20px;
 }
 .presentation-content .text p {
@@ -161,7 +161,7 @@ p {
  max-width: 100%;
  height: 300px;
  border-radius: 10px;
- box-shadow: 0 0 15px #3974E9;
+ box-shadow: 0 0 15px #336ED4;
  animation: zoomIn 1.5s ease;
 }
 
@@ -207,7 +207,7 @@ p {
   box-shadow: 0 0 15px #fff;
 }
 .atelier h3 {
-  color: #3974E9;
+  color: #336ED4;
   margin-bottom: 10px;
 }
 
@@ -226,8 +226,8 @@ p {
 
 .social-login button {
  background: none;
- border: 1px solid #397AE9;
- color: #397AE9;
+ border: 1px solid #336ED4;
+ color: #336ED4;
  padding: 6px;
  margin-top: 5px;
  display: flex;
@@ -237,7 +237,7 @@ p {
 }
 .footer-circle {
  background: #000;
- border-top: 4px solid #397AE9;
+ border-top: 4px solid #336ED4;
  border-radius: 50px 50px 0 0;
  display: flex;
  justify-content: center;
