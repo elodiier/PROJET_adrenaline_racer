@@ -17,3 +17,4 @@ btn.addEventListener('dblclick', () => {
  connected = !connected;
  document.getElementById('loginIcon').className = connected ? 'fas fa-sign-out-alt' : 'fas fa-user';
 });
+

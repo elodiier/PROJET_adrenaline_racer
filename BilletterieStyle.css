@@ -19,8 +19,7 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    padding: 0 10px;
-    min-height: 100vh;
+    padding: 0 10px;;
     background: linear-gradient(to bottom, black, #336ED4);
 
 }
@@ -108,9 +107,10 @@ header {
     padding: 14px;
     border-radius: 12px;
     box-shadow: 0 0 20px #336ED4;
-    margin-top: 85px; 
+    margin-top: 50px; 
 }
    .ticket {
+
      background-color: #141414;
      border-radius: 10px;
      padding: 24px;
@@ -179,6 +179,7 @@ header {
      border-radius: 8px;
      padding: 16px 20px;
      margin-top: 30px;
+     margin-bottom: 25px;
      line-height: 1.5;
    }
    .explanation h2 {
@@ -186,7 +187,7 @@ header {
      color: #336ED4;
      font-size: 1.2rem;
    }
-   /* Footer */
+/* Footer */
 
 .social-login button {
  background: none;
@@ -205,9 +206,13 @@ header {
  border-radius: 50px 50px 0 0;
  display: flex;
  justify-content: center;
+ align-items: center;
  gap: 15px;
  padding: 15px;
- flex-wrap: wrap;
+ position: fixed;
+ bottom: 0;
+ width: 100%;
+ z-index: 1;
 }
 .footer-circle a {
  color: #fff;
