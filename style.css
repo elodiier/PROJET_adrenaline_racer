@@ -11,6 +11,9 @@ header {
  background: #000;
  border-bottom: 4px solid #336ED4;
  border-radius: 0 0 50px 50px;
+ position: fixed;
+ z-index: 1;
+ width: 100vw;
 }
 
 /* Nav Bar */
@@ -42,6 +45,7 @@ header {
  align-items: center;
  gap: 6px;
 }
+
 .modal {
  display: none;
  position: fixed; top: 0; left: 0;
@@ -50,6 +54,7 @@ header {
  justify-content: center; 
  align-items: center;
  z-index: 1;
+ font-family: 'eurostile';
 }
 .modal-content {
  background: #111;
@@ -93,7 +98,8 @@ header {
   display: block;
   text-align: center;
   width: 100%;
-  margin-top: 40px;
+  margin-top: 130px;
+  margin-bottom: 20px;
 }
 
 @keyframes shakeStart {
@@ -121,7 +127,7 @@ header {
 }
 p {
     margin-bottom: 20px;
-    margin-top: 20px;
+    margin-top: 8px;
 }
 
   /*présentation*/

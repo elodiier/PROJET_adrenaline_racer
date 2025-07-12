@@ -40,6 +40,9 @@ header {
     background: #000;
     border-bottom: 4px solid #336ED4;
     border-radius: 0 0 50px 50px;
+    position: fixed;
+    z-index: 1;
+    width: 100vw;
 }
 
 .navbar {
@@ -85,6 +88,7 @@ header {
     justify-content: center;
     align-items: center;
     z-index: 2000;
+    font-family: 'eurostile';
 }
 .modal.active {
     display: flex;
@@ -140,6 +144,7 @@ header {
     flex-wrap: wrap;
     gap: 20px;
     padding: 40px 20px;
+    margin-top: auto;
     /* margin-top: auto;  <-- SUPPRIMÉ */
 }
 .flip-card {
@@ -262,7 +267,11 @@ footer {
         justify-content: center;
         gap: 15px;
     }
-        .footer-circle {
+    .cards-container {
+        margin-top: 120px;
+
+    }
+    .footer-circle {
         flex-direction: row;
         gap: 10px;
         padding: 20px 0 10px 0;
