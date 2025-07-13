@@ -18,6 +18,12 @@ header {
  background: #000;
  border-bottom: 4px solid #336ED4;
  border-radius: 0 0 50px 50px;
+ position: fixed;
+ top: 0;
+ left: 0;
+ width: 100%;
+ z-index: 1;
+
 }
 
 /*Nab Bar*/
@@ -92,7 +98,7 @@ header {
 
 main {
     max-width: 1200px;
-    margin: 40px auto 0 auto;
+    margin: 120px auto 0 auto;
     padding: 30px 20px;
     display: flex;
     flex-direction: column;
@@ -209,6 +215,12 @@ section img {
    flex-wrap: wrap;
    justify-content: center;
    gap: 15px;
+ }
+ .navbar {
+    padding: 15px 20px;;
+ }
+ main {
+    margin-top: 100px;
  }
 }
 

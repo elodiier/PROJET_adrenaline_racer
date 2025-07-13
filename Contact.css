@@ -22,6 +22,12 @@ header {
  background: #000;
  border-bottom: 4px solid #336ED4;
  border-radius: 0 0 50px 50px;
+ top: 0;
+ left: 0;
+ position: fixed;
+ width: 100%;
+ z-index: 1;
+
 }
 
 /* Barre de nav */
@@ -101,6 +107,8 @@ header {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    padding-top: 150px;
+    min-height: calc(100vh-150px);
     
 
 }
@@ -385,16 +393,26 @@ header {
  .nav-links {
    flex-wrap: wrap;
    justify-content: center;
-   gap: 15px;
+   gap: 10px;
+ }
+ .contact {
+    padding-top: 120px;
+
+ }
+ .nav-item a, .login-btn {
+    font-size: 16px;
  }
 }
 
 /* responsive */
 
 @media (max-width: 991px) {
+    .navbar {
+        padding: 15px 20px;
+    }
     .contact
     {
-        padding: 50px;
+        padding: 100px 50px 50px;
     }
     .container
     {
@@ -419,4 +437,13 @@ header {
         margin-bottom: 0;
     }
     
+}
+
+@media (max-width: 480px){
+    .navbar {
+        padding: 10px 15px;
+        }
+    .contact {
+        padding: 100px 20px 20px;
+    }
 }
